@@ -1,0 +1,7 @@
+# Ignore everything
+*
+
+# Allow only the deployable HTML
+!index.html
+!.gitignore
+!README.md

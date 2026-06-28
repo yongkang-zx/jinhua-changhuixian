@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一文读懂金华长期护理保险（长护险）｜2025-2026最新政策科普</title>
+<style>
+  :root {
+    --primary: #c8102e;       /* 金华红 */
+    --primary-dark: #9d0c24;
+    --accent: #ffb800;        /* 暖黄 */
+    --bg: #faf7f2;
+    --bg-card: #ffffff;
+    --ink: #1a1a1a;
+    --ink-2: #4a4a4a;
+    --ink-3: #7a7a7a;
+    --line: #e8e2d6;
+    --green: #2e8b57;
+    --blue: #1e6091;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.7;
+    color: var(--ink);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ============ Hero ============ */
+  .hero {
+    background: linear-gradient(135deg, #c8102e 0%, #8b0a1f 60%, #4a0511 100%);
+    color: #fff;
+    padding: 80px 24px 90px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 80% 20%, rgba(255,184,0,.18) 0%, transparent 50%),
+                radial-gradient(ellipse at 10% 90%, rgba(255,255,255,.08) 0%, transparent 50%);
+    pointer-events: none;
+  }
+  .hero-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,.15);
+    border: 1px solid rgba(255,255,255,.3);
+    color: #fff;
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+  }
+  .hero h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+  }
+  .hero h1 .hl { color: var(--accent); }
+  .hero p.lead {
+    font-size: clamp(16px, 2vw, 19px);
+    opacity: 0.95;
+    max-width: 720px;
+    margin-bottom: 30px;
+  }
+  .hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 30px;
+  }
+  .meta-item {
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.2);
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+  }
+  .meta-item strong { color: var(--accent); margin-right: 6px; }
+
+  /* ============ Layout ============ */
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 60px 24px;
+  }
+  section { margin-bottom: 60px; }
+  h2 {
+    font-size: clamp(24px, 3.5vw, 34px);
+    font-weight: 800;
+    color: var(--ink);
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 16px;
+  }
+  h2::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 8px;
+    bottom: 8px;
+    width: 5px;
+    background: var(--primary);
+    border-radius: 4px;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+    margin: 24px 0 12px;
+  }
+  .sub {
+    color: var(--ink-3);
+    font-size: 15px;
+    margin-bottom: 28px;
+  }
+
+  /* ============ Quick Stats ============ */
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-top: 30px;
+  }
+  .stat {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 24px 20px;
+    text-align: center;
+    transition: transform .2s, box-shadow .2s;
+  }
+  .stat:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(200,16,46,.08);
+    border-color: var(--primary);
+  }
+  .stat-num {
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--primary);
+    line-height: 1.1;
+  }
+  .stat-num small {
+    font-size: 16px;
+    color: var(--ink-3);
+    font-weight: 500;
+    margin-left: 2px;
+  }
+  .stat-label {
+    font-size: 14px;
+    color: var(--ink-2);
+    margin-top: 8px;
+  }
+
+  /* ============ Cards ============ */
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 18px;
+  }
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 24px;
+    transition: all .2s;
+  }
+  .card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 6px 20px rgba(200,16,46,.06);
+  }
+  .card .icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    margin-bottom: 14px;
+  }
+  .card h4 {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .card p {
+    color: var(--ink-2);
+    font-size: 14.5px;
+  }
+
+  /* ============ Tables ============ */
+  .table-wrap {
+    overflow-x: auto;
+    border-radius: 12px;
+    border: 1px solid var(--line);
+    background: var(--bg-card);
+    margin: 20px 0;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14.5px;
+    min-width: 600px;
+  }
+  thead {
+    background: linear-gradient(180deg, #fff5f5 0%, #ffe8e8 100%);
+  }
+  th {
+    padding: 14px 16px;
+    text-align: left;
+    font-weight: 700;
+    color: var(--primary-dark);
+    border-bottom: 2px solid var(--primary);
+    white-space: nowrap;
+  }
+  td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--line);
+    color: var(--ink-2);
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  tbody tr:hover { background: #fdf8f3; }
+  td strong { color: var(--ink); font-weight: 700; }
+  .tag {
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 100px;
+    font-size: 12px;
+    color: var(--ink-2);
+    margin-right: 4px;
+  }
+  .tag-red {
+    background: #fff0f0;
+    color: var(--primary-dark);
+    border-color: #ffc4c4;
+  }
+  .tag-green {
+    background: #f0f7f3;
+    color: var(--green);
+    border-color: #c8e4d4;
+  }
+  .tag-blue {
+    background: #f0f5fa;
+    color: var(--blue);
+    border-color: #c4d9eb;
+  }
+
+  /* ============ Callout ============ */
+  .callout {
+    background: linear-gradient(135deg, #fff8e8 0%, #fff3d0 100%);
+    border-left: 4px solid var(--accent);
+    padding: 18px 22px;
+    border-radius: 10px;
+    margin: 24px 0;
+    color: #6b5310;
+  }
+  .callout strong { color: #8b6914; }
+  .callout-red {
+    background: linear-gradient(135deg, #fff0f0 0%, #ffe0e0 100%);
+    border-left-color: var(--primary);
+    color: #6b0a18;
+  }
+  .callout-red strong { color: var(--primary-dark); }
+
+  /* ============ Case Study ============ */
+  .case {
+    background: var(--bg-card);
+    border-radius: 16px;
+    padding: 28px;
+    border: 2px solid var(--line);
+    position: relative;
+    overflow: hidden;
+  }
+  .case::before {
+    content: "CASE";
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: var(--ink-3);
+    opacity: 0.6;
+  }
+  .case h4 {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: var(--primary-dark);
+  }
+  .calc {
+    background: var(--bg);
+    border-radius: 10px;
+    padding: 18px;
+    margin-top: 16px;
+    font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 14px;
+    line-height: 1.9;
+  }
+  .calc .formula { color: var(--ink-3); }
+  .calc .result { color: var(--primary); font-weight: 700; font-size: 15px; }
+
+  /* ============ Process ============ */
+  .process {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 0;
+    margin: 24px 0;
+    position: relative;
+  }
+  .step {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    padding: 20px 16px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  .step:first-child { border-radius: 12px 0 0 12px; }
+  .step:last-child { border-radius: 0 12px 12px 0; }
+  .step + .step { border-left: none; }
+  .step-num {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin: 0 auto 10px;
+    font-size: 15px;
+  }
+  .step h5 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .step p {
+    font-size: 13px;
+    color: var(--ink-3);
+    line-height: 1.5;
+  }
+
+  /* ============ Compare ============ */
+  .compare {
+    background: var(--bg-card);
+    border-radius: 14px;
+    border: 1px solid var(--line);
+    overflow: hidden;
+    margin: 24px 0;
+  }
+  .compare-header {
+    background: var(--ink);
+    color: #fff;
+    padding: 14px 20px;
+    font-weight: 700;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 10px;
+    font-size: 14px;
+  }
+  .compare-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 10px;
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--line);
+    font-size: 14px;
+  }
+  .compare-row:last-child { border-bottom: none; }
+  .compare-row > div:first-child { font-weight: 600; }
+  .highlight { color: var(--primary); font-weight: 700; }
+
+  /* ============ FAQ ============ */
+  .faq-item {
+    background: var(--bg-card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    transition: border-color .2s;
+  }
+  .faq-item.open { border-color: var(--primary); }
+  .faq-q {
+    padding: 16px 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    user-select: none;
+  }
+  .faq-q::after {
+    content: "+";
+    color: var(--primary);
+    font-size: 24px;
+    font-weight: 300;
+    transition: transform .3s;
+  }
+  .faq-item.open .faq-q::after { content: "−"; }
+  .faq-a {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .3s, padding .3s;
+    color: var(--ink-2);
+    font-size: 14.5px;
+    padding: 0 20px;
+    line-height: 1.8;
+  }
+  .faq-item.open .faq-a {
+    max-height: 500px;
+    padding: 0 20px 18px;
+  }
+
+  /* ============ Hotline ============ */
+  .hotline {
+    background: linear-gradient(135deg, #1a1a1a 0%, #3a0a14 100%);
+    color: #fff;
+    border-radius: 16px;
+    padding: 32px;
+    margin: 30px 0;
+  }
+  .hotline h3 {
+    color: #fff;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  .phone-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+  }
+  .phone {
+    background: rgba(255,255,255,.06);
+    border: 1px solid rgba(255,255,255,.12);
+    padding: 14px 16px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .phone .area { font-size: 13px; opacity: .85; }
+  .phone .num {
+    font-family: "SF Mono", Menlo, monospace;
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 15px;
+  }
+
+  /* ============ Footer ============ */
+  footer {
+    background: #1a1a1a;
+    color: #999;
+    padding: 30px 24px;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.8;
+  }
+  footer a { color: var(--accent); text-decoration: none; }
+
+  /* ============ Mobile ============ */
+  @media (max-width: 720px) {
+    .hero { padding: 50px 20px 60px; }
+    .container { padding: 40px 18px; }
+    section { margin-bottom: 40px; }
+    .compare-header, .compare-row {
+      grid-template-columns: 1.2fr 1fr 1fr;
+      font-size: 12.5px;
+      padding: 12px 14px;
+    }
+    .step:first-child { border-radius: 12px 12px 0 0; }
+    .step:last-child { border-radius: 0 0 12px 12px; }
+    .step + .step { border-left: 1px solid var(--line); border-top: none; }
+    .process { grid-template-columns: 1fr; }
+    h2 { font-size: 24px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ========== HERO ========== -->
+<header class="hero">
+  <div class="hero-inner">
+    <span class="badge">金华医保 · 2025年1月1日起正式实施</span>
+    <h1>金华长护险<span class="hl">一图读懂</span><br>失能老人的"第六险"到底保什么？</h1>
+    <p class="lead">
+      长期护理保险（长护险）是社保体系的新成员，被称为继养老、医疗、工伤、生育、失业保险之后的<span style="color:#ffb800;font-weight:700">"第六险"</span>。
+      金华市自2025年1月1日起全面实施，覆盖全市职工医保与市区、东阳、义乌、永康的居民医保参保人。本文用最直白的方式帮你搞懂政策、缴费、待遇和申请。
+    </p>
+    <div class="hero-meta">
+      <div class="meta-item"><strong>政策文号</strong>金政办发〔2024〕36号</div>
+      <div class="meta-item"><strong>细则文号</strong>金医保发〔2024〕63号</div>
+      <div class="meta-item"><strong>筹资标准</strong>90元/年/人</div>
+      <div class="meta-item"><strong>目标人群</strong>重度失能人员</div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- ========== 60秒看懂 ========== -->
+  <section>
+    <h2>60 秒看懂长护险</h2>
+    <p class="sub">一句话：长护险就是"政府+单位+个人"凑钱，给长期卧床、生活不能自理的老人请护工或送机构，国家帮你报销大头。</p>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">90<small>元/年</small></div>
+        <div class="stat-label">起步筹资标准<br>（职工个人仅掏一半）</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">80<small>%</small></div>
+        <div class="stat-label">居家护理基金<br>支付比例</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">70<small>%</small></div>
+        <div class="stat-label">机构护理基金<br>支付比例</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">25<small>小时/月</small></div>
+        <div class="stat-label">居家护理<br>服务时长上限</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">6<small>个月</small></div>
+        <div class="stat-label">失能持续时长<br>准入门槛</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">76<small>项</small></div>
+        <div class="stat-label">护理服务项目<br>（42生活+34医疗）</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 参保对象 ========== -->
+  <section>
+    <h2>谁能参保？</h2>
+    <p class="sub">金华长护险"绑定"基本医保——只要你在参加医保，就自动参加长护险，<strong>不能单独参保</strong>。</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="icon">👥</div>
+        <h4>必参保人群</h4>
+        <p>金华市<strong>职工基本医疗保险</strong>（基本医疗保险一档）参保人员，覆盖在职职工、退休人员、灵活就业人员。</p>
+      </div>
+      <div class="card">
+        <div class="icon">🏘️</div>
+        <h4>城乡居民参保</h4>
+        <p>金华市区、东阳市、义乌市、永康市<strong>城乡居民基本医疗保险</strong>（二档、三档）参保人员。其他县市可根据实际推进。</p>
+      </div>
+      <div class="card">
+        <div class="icon">💼</div>
+        <h4>灵活就业人员</h4>
+        <p>参加职工医保的灵活就业人员参照职工标准执行，与单位职工享受同等待遇。</p>
+      </div>
+      <div class="card">
+        <div class="icon">🤝</div>
+        <h4>特殊困难人员</h4>
+        <p>享受政府资助参保的特殊困难人员（如特困、低保、残疾人等），个人缴费部分由<strong>财政全额补助</strong>。</p>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>义乌特色：</strong>义乌市作为浙江省长护险先行试点城市，市级统筹前已享受待遇的人员和先行试点的<strong>重度失智</strong>人员仍按义乌原政策执行，待遇差由义乌市长护险基金历年结余列支。
+    </div>
+  </section>
+
+  <!-- ========== 缴费标准 ========== -->
+  <section>
+    <h2>一年要交多少钱？</h2>
+    <p class="sub">金华长护险实行<strong>按年缴费、定额筹资</strong>。起步阶段按每人每年 90 元的标准，资金由用人单位、个人、财政三方分担。</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>参保身份</th>
+            <th>个人缴费</th>
+            <th>单位/统筹/财政</th>
+            <th>合计</th>
+            <th>划扣方式</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>职工医保在职</strong></td>
+            <td>45 元</td>
+            <td>用人单位 45 元</td>
+            <td><span class="tag tag-red">90 元</span></td>
+            <td>每年 1/1 前从<strong>医保个人账户</strong>代扣代缴；单位部分通过医保费率平移划转，<strong>不增加单位负担</strong></td>
+          </tr>
+          <tr>
+            <td><strong>职工医保退休</strong></td>
+            <td>45 元</td>
+            <td>医保统筹基金 45 元</td>
+            <td><span class="tag tag-red">90 元</span></td>
+            <td>每年 1/1 前从医保个人账户代扣</td>
+          </tr>
+          <tr>
+            <td><strong>灵活就业人员</strong></td>
+            <td>45 元</td>
+            <td>参照职工标准</td>
+            <td><span class="tag tag-red">90 元</span></td>
+            <td>参照职工医保渠道执行</td>
+          </tr>
+          <tr>
+            <td><strong>居民医保参保人</strong></td>
+            <td>30 元</td>
+            <td>财政补助 60 元</td>
+            <td><span class="tag tag-red">90 元</span></td>
+            <td>与基本医保<strong>同步征缴</strong></td>
+          </tr>
+          <tr>
+            <td><strong>18 周岁以下</strong></td>
+            <td colspan="4" style="color:var(--green)">免缴长护险费（跟随父母或法定抚养人参保，享受居民待遇）</td>
+          </tr>
+          <tr>
+            <td><strong>特困/低保等</strong></td>
+            <td colspan="4" style="color:var(--green)">个人缴费由<strong>当地财政全额补助</strong></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout callout-red">
+      <strong>2026 年度最新缴费标准</strong>（已发布）：市区城乡居民三档个人缴费 <strong>670 元</strong>（含长护险 30 元，财政补助 1215 元含长护险 60 元）；二档个人缴费 <strong>2650 元</strong>（含长护险 30 元）。缴费时间 2025 年 10 月 17 日—12 月 25 日，浙里办/支付宝/微信/银行均可办理。
+    </div>
+  </section>
+
+  <!-- ========== 待遇标准 ========== -->
+  <section>
+    <h2>能享受什么待遇？</h2>
+    <p class="sub">长护险待遇<strong>不设起付标准</strong>，根据护理服务方式（居家或机构）实行差别化报销。</p>
+
+    <div class="grid-2">
+      <div class="card">
+        <div class="icon" style="background:linear-gradient(135deg,#2e8b57,#1f6b41)">🏠</div>
+        <h4>居家护理服务</h4>
+        <p>由定点护理服务机构上门提供服务。每月不超过 <strong>25 小时</strong>，按 <strong>60 元/小时</strong> 结算，<span class="highlight">基金支付 80%</span>。</p>
+        <p style="margin-top:10px;font-size:13px;color:var(--ink-3)">每周上门不少于 2 次，每次不少于 1 小时。偏远山区可由培训后的亲属、邻里护理，25 元/日。</p>
+      </div>
+      <div class="card">
+        <div class="icon" style="background:linear-gradient(135deg,#1e6091,#134867)">🏥</div>
+        <h4>机构护理服务</h4>
+        <p>入住定点护理机构。按 <strong>80 元/床日</strong> 结算（每月最高约 2400 元），<span class="highlight">基金支付 70%</span>。</p>
+        <p style="margin-top:10px;font-size:13px;color:var(--ink-3)">机构床位费、膳食费等非护理费用基金不予支付。</p>
+      </div>
+    </div>
+
+    <h3>直观算一笔账</h3>
+
+    <div class="grid-2">
+      <div class="case">
+        <h4>🏠 居家护理案例 · 张某</h4>
+        <p style="color:var(--ink-2)">重度失能老人，选择居家护理，每月享受 25 小时上门服务（含沐浴、理发等 42 项生活照料 + 吸痰、换药等 34 项医疗护理）。</p>
+        <div class="calc">
+          <div class="formula">基金支付 = 60 元/小时 × 25 小时 × 80%</div>
+          <div class="result">基金支付：1200 元 / 月</div>
+          <div class="formula">个人承担 = 60 × 25 × 20%</div>
+          <div class="result">个人承担：300 元 / 月</div>
+        </div>
+      </div>
+
+      <div class="case">
+        <h4>🏥 机构护理案例 · 王某</h4>
+        <p style="color:var(--ink-2)">重度失能老人，入住定点护理机构，机构按规范标准提供护理，每月护理费用 2400 元。</p>
+        <div class="calc">
+          <div class="formula">基金支付 = 80 元/床日 × 30 日 × 70%</div>
+          <div class="result">基金支付：1680 元 / 月</div>
+          <div class="formula">个人承担 = 2400 − 1680</div>
+          <div class="result">个人承担：720 元 / 月</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>不纳入基金支付的情形：</strong>①应当由医疗保险、工伤保险基金支付的；②应当由第三人负担的；③应当由公共卫生负担的；④非协议管理定点机构发生的；⑤其他法律法规规定不予支付的。同时符合长护险与养老护理补贴的，原则上择一享受；享受特困/失能低保入住养老机构护理的对象不再享受长护险待遇。
+    </div>
+  </section>
+
+  <!-- ========== 享受条件 ========== -->
+  <section>
+    <h2>符合什么条件才能享受？</h2>
+    <p class="sub">不是所有失能都能享受，必须满足"两个 6 个月 + 一个重度"。</p>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="icon">⏱️</div>
+        <h4>失能 ≥ 6 个月</h4>
+        <p>经医疗机构或康复机构规范诊疗，<strong>失能状态持续 6 个月以上</strong>，或因年老失能。</p>
+      </div>
+      <div class="card">
+        <div class="icon">📋</div>
+        <h4>通过失能等级评估</h4>
+        <p>向长护险失能等级评估委员会申请评估，认定符合<strong>重度失能标准</strong>。评估结论分四级。</p>
+      </div>
+      <div class="card">
+        <div class="icon">✅</div>
+        <h4>正常享受医保待遇</h4>
+        <p>长护险待遇享受时间与基本医保待遇保持一致，中断缴费会影响待遇。</p>
+      </div>
+    </div>
+
+    <div class="callout callout-red">
+      <strong>起付时间：</strong>评估认定符合重度失能标准的参保人员，<strong>自作出评估结论的次月起</strong>按规定享受长护险待遇。<br>
+      <strong>失能等级评估申请受理时间：</strong>2025 年 1 月 1 日起。
+    </div>
+  </section>
+
+  <!-- ========== 申请流程 ========== -->
+  <section>
+    <h2>怎么办理？申请流程 5 步走</h2>
+
+    <div class="process">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h5>提出申请</h5>
+        <p>本人/监护人/委托代理人通过浙里办 APP、医保窗口、乡镇卫生院、定点机构提出</p>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h5>受理审核</h5>
+        <p>医保经办机构受理申请，审核是否符合失能条件</p>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h5>失能评估</h5>
+        <p>专家库抽取评估人员上门评估，按浙江省评估规范打分</p>
+      </div>
+      <div class="step">
+        <div class="step-num">4</div>
+        <h5>结论公示</h5>
+        <p>出具评估结论，符合重度失能者公示后进入待遇享受阶段</p>
+      </div>
+      <div class="step">
+        <div class="step-num">5</div>
+        <h5>享受待遇</h5>
+        <p>次月起享受居家或机构护理服务，费用由长护险基金按比例支付</p>
+      </div>
+    </div>
+
+    <h3>线上申请主入口</h3>
+    <div class="grid-3">
+      <div class="card">
+        <div class="icon">📱</div>
+        <h4>浙里办 APP</h4>
+        <p>搜索"浙里医保" → 失能等级评估模块，全程线上办理，<strong>推荐渠道</strong>。</p>
+      </div>
+      <div class="card">
+        <div class="icon">🏥</div>
+        <h4>医保经办窗口</h4>
+        <p>市/县（市、区）医保经办机构服务大厅，线下办理。</p>
+      </div>
+      <div class="card">
+        <div class="icon">🏘️</div>
+        <h4>乡镇/社区卫生服务中心</h4>
+        <p>就近办理，咨询、申请、初审一站搞定。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 全国横向对比 ========== -->
+  <section>
+    <h2>横向对比：金华 vs 全国</h2>
+    <p class="sub">把金华的政策放到全国 49 个试点城市里看，定位清晰多了。</p>
+
+    <div class="compare">
+      <div class="compare-header">
+        <div>维度</div>
+        <div>金华（2025）</div>
+        <div>国家方案（2025）</div>
+      </div>
+      <div class="compare-row">
+        <div>基准费率</div>
+        <div>定额 90 元/年</div>
+        <div>总体 0.3% 左右</div>
+      </div>
+      <div class="compare-row">
+        <div>职工筹资</div>
+        <div>个人 45 + 单位 45</div>
+        <div>单位 0.15% + 个人 0.15%</div>
+      </div>
+      <div class="compare-row">
+        <div>居民筹资</div>
+        <div>个人 30 + 财政 60</div>
+        <div>个人:财政 ≈ 1:1</div>
+      </div>
+      <div class="compare-row">
+        <div>报销 · 机构护理</div>
+        <div class="highlight">70%</div>
+        <div>70% 左右</div>
+      </div>
+      <div class="compare-row">
+        <div>报销 · 居民</div>
+        <div class="highlight">80%（居家）/ 70%（机构）</div>
+        <div>50% 左右</div>
+      </div>
+      <div class="compare-row">
+        <div>失能准入</div>
+        <div class="highlight">6 个月 + 重度</div>
+        <div>6 个月 + 失能评估</div>
+      </div>
+      <div class="compare-row">
+        <div>起步保障对象</div>
+        <div class="highlight">重度失能（含义乌失智）</div>
+        <div>重度失能起步</div>
+      </div>
+      <div class="compare-row">
+        <div>管理统筹</div>
+        <div class="highlight">市级统筹</div>
+        <div>以地市级统筹为主</div>
+      </div>
+    </div>
+
+    <div class="callout">
+      <strong>金华亮点：</strong>①<strong>市级统筹</strong>——全市统一政策、统一筹资、统一待遇，避免碎片化；②<strong>义乌试点</strong>平滑衔接，失能失智都覆盖；③<strong>偏远山区</strong>特别条款：机构上不了门时亲属、邻里护理也能报销 25 元/日的 80%；④起步筹资 90 元在全国属较低水平，职工只掏 45 元/月即可撬动每月上千元的护理服务。
+    </div>
+  </section>
+
+  <!-- ========== 常见问答 ========== -->
+  <section>
+    <h2>常见问答 FAQ</h2>
+    <p class="sub">把金华医保局官方问答里大家最关心的点整理在这里。</p>
+
+    <div class="faq-item open">
+      <div class="faq-q">长护险和医保有什么区别？</div>
+      <div class="faq-a">医保管"治病"，长护险管"长期照料护理"。医保不报销请护工、照料卧床老人等生活照料费用，而长护险专门为<strong>长期失能</strong>人员的基本生活照料和相关医疗护理提供服务和资金保障，是独立的第六个社保险种。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">我每年交 90 元，能拿回多少？</div>
+      <div class="faq-a">长护险不是"返还型"，是"互助共济"——所有人交的钱放进基金池，给符合条件的人使用。只要评估为重度失能，居家护理基金每月最多支付 <strong>1200 元</strong>，机构护理每月最多支付 <strong>1680 元</strong>，远超个人缴费。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">年轻人也要交吗？</div>
+      <div class="faq-a">是的，只要参加金华基本医保就同步参加长护险，包括年轻人。但<strong>18 周岁以下</strong>城乡居民参保人免缴长护险费（跟父母参保），年青时缴费是为将来的自己兜底。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">单位那 45 元会给我加负担吗？</div>
+      <div class="faq-a">不会。金华明确规定<strong>单位缴费部分通过医保费率平移转换方式从其缴纳的职工医保费中划转，不增加单位负担</strong>。对企业而言是"换口袋"。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">失能了但没参保，能申请吗？</div>
+      <div class="faq-a">不能。长护险是社会保险，必须先参保并正常享受医保待遇。如果中断缴费后再参保，按规定可能有<strong>待遇等待期</strong>（参考国家方案一般 6 个月起步），建议持续参保。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">可以在家里让家人护理吗？</div>
+      <div class="faq-a">一般情况下，长护险要求<strong>定点服务机构</strong>提供服务。但在政策实施初期的<strong>偏远山区</strong>，如果机构无法上门，可由经护理实践培训的亲属、邻里提供护理，支付标准 25 元/日，基金支付 80%。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">评估没过能复评吗？</div>
+      <div class="faq-a">可以。失能等级评估分<strong>初次评估、争议复评、重新评估</strong>三种类型。若对初次评估结论有异议，可按规定申请争议复评。</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q">金华以外的城市能用吗？</div>
+      <div class="faq-a">目前金华长护险仅在金华市行政区域内有效，异地居住人员的护理服务原则上仍需回到金华定点机构。若长期异地居住，需关注后续跨省异地结算政策。</div>
+    </div>
+  </section>
+
+  <!-- ========== 咨询电话 ========== -->
+  <section>
+    <h2>政策咨询电话</h2>
+    <p class="sub">有问题直接打，不要在网上查来查去。</p>
+
+    <div class="hotline">
+      <h3>金华市长护险咨询热线</h3>
+      <div class="phone-grid">
+        <div class="phone"><span class="area">金华市区</span><span class="num">400-0579-222</span></div>
+        <div class="phone"><span class="area">兰溪市</span><span class="num">0579-88133182</span></div>
+        <div class="phone"><span class="area">东阳市</span><span class="num">0579-86639155</span></div>
+        <div class="phone"><span class="area">义乌市</span><span class="num">0579-85020060</span></div>
+        <div class="phone"><span class="area">永康市</span><span class="num">0579-87312393</span></div>
+        <div class="phone"><span class="area">浦江县</span><span class="num">0579-89392657</span></div>
+        <div class="phone"><span class="area">武义县</span><span class="num">0579-89081191</span></div>
+        <div class="phone"><span class="area">磐安县</span><span class="num">0579-84661958</span></div>
+        <div class="phone"><span class="area">通用医保</span><span class="num">12393</span></div>
+        <div class="phone"><span class="area">税务缴费</span><span class="num">12366</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 一句话总结 ========== -->
+  <section>
+    <h2>一句话总结</h2>
+    <div class="case" style="border-color: var(--primary); background: linear-gradient(135deg, #fff8f8 0%, #fff0f0 100%);">
+      <p style="font-size:17px;line-height:1.9;color:var(--ink-2)">
+        <strong style="color:var(--primary-dark);font-size:18px">长护险就是为"一人失能，全家失衡"的家庭兜底的社会保险。</strong><br><br>
+        在金华，<strong style="color:var(--primary-dark)">每年交 45-90 元</strong>，万一家里老人重度失能，国家帮你每月报销 <strong>1200-1680 元</strong>的护理费，相当于用几十倍的杠杆，给失能家庭买一份尊严和保障。<br><br>
+        记住三个关键词：<span class="tag tag-red">6 个月失能</span> <span class="tag tag-red">重度评估</span> <span class="tag tag-red">次月享受</span>。<br>
+        申请渠道：<span class="tag tag-blue">浙里办 APP</span> 或当地医保经办窗口。
+      </p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  <p>本文为科普性质内容，所有政策标准以 <strong>金华市医疗保障局</strong> 官方发布为准。</p>
+  <p>政策依据：《金华市人民政府办公室关于印发金华市长期护理保险实施办法的通知》（金政办发〔2024〕36号）<br>
+  《金华市长期护理保险实施细则》（金医保发〔2024〕63号）</p>
+  <p style="margin-top:14px;opacity:.7">最后更新：2026 年 6 月 · 数据来源：金华医保局、澎湃新闻、金华本地宝、国家医保局</p>
+</footer>
+
+<script>
+  // FAQ toggle
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      q.parentElement.classList.toggle('open');
+    });
+  });
+</script>
+
+</body>
+</html>
