@@ -6,7 +6,7 @@
 
 - 来源文件：`金华长护险科普_2026.html`
 - 部署平台：GitHub Pages
-- 站点地址：https://a1056804912-prog.github.io/jinhua-changhuixian/
+- 站点地址：https://yongkang-zx.github.io/jinhua-changhuixian/
 
 ## 政策依据
 
