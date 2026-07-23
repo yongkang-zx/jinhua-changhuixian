@@ -1,7 +1,2 @@
-# Ignore everything
-*
-
-# Allow only the deployable HTML
-!index.html
-!.gitignore
-!README.md
+# 长护险养老调研 · 东阳/贵阳/合肥（2026-07-23）
+# 全部文件均可提交
