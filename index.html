@@ -3,940 +3,1657 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>一文读懂金华长期护理保险（长护险）｜2025-2026最新政策科普</title>
+<title>长护险养老调研综合报告 · 东阳/贵阳/合肥（2026-07-23）</title>
 <style>
-  :root {
-    --primary: #c8102e;       /* 金华红 */
-    --primary-dark: #9d0c24;
-    --accent: #ffb800;        /* 暖黄 */
-    --bg: #faf7f2;
-    --bg-card: #ffffff;
-    --ink: #1a1a1a;
-    --ink-2: #4a4a4a;
-    --ink-3: #7a7a7a;
-    --line: #e8e2d6;
-    --green: #2e8b57;
-    --blue: #1e6091;
-  }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
-  body {
-    font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.7;
-    color: var(--ink);
-    background: var(--bg);
-    -webkit-font-smoothing: antialiased;
-  }
+:root{
+  --primary:#2563eb;
+  --primary-dark:#1d4ed8;
+  --accent:#dc2626;
+  --success:#059669;
+  --warning:#d97706;
+  --gray-50:#f8fafc;
+  --gray-100:#f1f5f9;
+  --gray-200:#e2e8f0;
+  --gray-300:#cbd5e1;
+  --gray-400:#94a3b8;
+  --gray-500:#64748b;
+  --gray-600:#475569;
+  --gray-700:#334155;
+  --gray-800:#1e293b;
+  --gray-900:#0f172a;
+  --bg:#ffffff;
+  --text:#0f172a;
+  --text-muted:#64748b;
+  --border:#e2e8f0;
+  --code-bg:#f1f5f9;
+  --quote-bg:#f0f9ff;
+  --quote-border:#3b82f6;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:15px;
+  line-height:1.7;
+  color:var(--text);
+  background:var(--gray-50);
+  -webkit-font-smoothing:antialiased;
+}
 
-  /* ============ Hero ============ */
-  .hero {
-    background: linear-gradient(135deg, #c8102e 0%, #8b0a1f 60%, #4a0511 100%);
-    color: #fff;
-    padding: 80px 24px 90px;
-    position: relative;
-    overflow: hidden;
-  }
-  .hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(ellipse at 80% 20%, rgba(255,184,0,.18) 0%, transparent 50%),
-                radial-gradient(ellipse at 10% 90%, rgba(255,255,255,.08) 0%, transparent 50%);
-    pointer-events: none;
-  }
-  .hero-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-    position: relative;
-  }
-  .badge {
-    display: inline-block;
-    background: rgba(255,255,255,.15);
-    border: 1px solid rgba(255,255,255,.3);
-    color: #fff;
-    padding: 6px 14px;
-    border-radius: 100px;
-    font-size: 13px;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-    backdrop-filter: blur(10px);
-  }
-  .hero h1 {
-    font-size: clamp(32px, 5vw, 52px);
-    font-weight: 800;
-    line-height: 1.2;
-    margin-bottom: 20px;
-    letter-spacing: -0.5px;
-  }
-  .hero h1 .hl { color: var(--accent); }
-  .hero p.lead {
-    font-size: clamp(16px, 2vw, 19px);
-    opacity: 0.95;
-    max-width: 720px;
-    margin-bottom: 30px;
-  }
-  .hero-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-    margin-top: 30px;
-  }
-  .meta-item {
-    background: rgba(255,255,255,.1);
-    border: 1px solid rgba(255,255,255,.2);
-    padding: 10px 18px;
-    border-radius: 10px;
-    font-size: 14px;
-  }
-  .meta-item strong { color: var(--accent); margin-right: 6px; }
+/* ===== Layout ===== */
+.header{
+  background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);
+  color:#fff;
+  padding:32px 48px;
+  position:sticky;top:0;z-index:100;
+  box-shadow:0 4px 12px rgba(0,0,0,.08);
+}
+.header h1{font-size:24px;font-weight:600;margin-bottom:6px}
+.header .sub{font-size:14px;opacity:.92}
+.header .meta{margin-top:12px;font-size:13px;opacity:.88;display:flex;gap:24px;flex-wrap:wrap}
+.header .meta span::before{content:"· ";margin-right:4px}
 
-  /* ============ Layout ============ */
-  .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 60px 24px;
-  }
-  section { margin-bottom: 60px; }
-  h2 {
-    font-size: clamp(24px, 3.5vw, 34px);
-    font-weight: 800;
-    color: var(--ink);
-    margin-bottom: 12px;
-    position: relative;
-    padding-left: 16px;
-  }
-  h2::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 8px;
-    bottom: 8px;
-    width: 5px;
-    background: var(--primary);
-    border-radius: 4px;
-  }
-  h3 {
-    font-size: 20px;
-    font-weight: 700;
-    color: var(--ink);
-    margin: 24px 0 12px;
-  }
-  .sub {
-    color: var(--ink-3);
-    font-size: 15px;
-    margin-bottom: 28px;
-  }
+.layout{display:flex;max-width:1400px;margin:0 auto;gap:0}
 
-  /* ============ Quick Stats ============ */
-  .stats {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 16px;
-    margin-top: 30px;
-  }
-  .stat {
-    background: var(--bg-card);
-    border: 1px solid var(--line);
-    border-radius: 14px;
-    padding: 24px 20px;
-    text-align: center;
-    transition: transform .2s, box-shadow .2s;
-  }
-  .stat:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 30px rgba(200,16,46,.08);
-    border-color: var(--primary);
-  }
-  .stat-num {
-    font-size: 36px;
-    font-weight: 800;
-    color: var(--primary);
-    line-height: 1.1;
-  }
-  .stat-num small {
-    font-size: 16px;
-    color: var(--ink-3);
-    font-weight: 500;
-    margin-left: 2px;
-  }
-  .stat-label {
-    font-size: 14px;
-    color: var(--ink-2);
-    margin-top: 8px;
-  }
+.sidebar{
+  width:280px;
+  background:#fff;
+  border-right:1px solid var(--border);
+  padding:32px 0;
+  position:sticky;
+  top:140px;
+  height:calc(100vh - 140px);
+  overflow-y:auto;
+  flex-shrink:0;
+}
+.sidebar h3{
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.05em;
+  color:var(--text-muted);
+  margin:0 24px 12px;
+  font-weight:600;
+}
+.sidebar ul{list-style:none;margin-bottom:24px}
+.sidebar li{}
+.sidebar a{
+  display:block;
+  padding:8px 24px;
+  color:var(--gray-700);
+  text-decoration:none;
+  font-size:13.5px;
+  border-left:3px solid transparent;
+  transition:all .15s;
+}
+.sidebar a:hover{
+  background:var(--gray-50);
+  color:var(--primary);
+  border-left-color:var(--primary);
+}
+.sidebar a.sub{
+  padding-left:40px;
+  font-size:12.5px;
+  color:var(--gray-500);
+}
+.sidebar .group{
+  font-weight:600;
+  color:var(--gray-800);
+  padding:6px 24px 4px;
+  font-size:13px;
+  background:var(--gray-50);
+  border-bottom:1px solid var(--border);
+  margin-bottom:4px;
+}
 
-  /* ============ Cards ============ */
-  .grid-2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
-  .grid-3 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 18px;
-  }
-  .card {
-    background: var(--bg-card);
-    border: 1px solid var(--line);
-    border-radius: 14px;
-    padding: 24px;
-    transition: all .2s;
-  }
-  .card:hover {
-    border-color: var(--primary);
-    box-shadow: 0 6px 20px rgba(200,16,46,.06);
-  }
-  .card .icon {
-    width: 44px;
-    height: 44px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
-    margin-bottom: 14px;
-  }
-  .card h4 {
-    font-size: 17px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-  .card p {
-    color: var(--ink-2);
-    font-size: 14.5px;
-  }
+.main{
+  flex:1;
+  padding:32px 48px 64px;
+  min-width:0;
+}
+.section{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:40px 48px;
+  margin-bottom:32px;
+  box-shadow:0 1px 3px rgba(0,0,0,.04);
+}
+.section h1{
+  font-size:28px;
+  font-weight:700;
+  color:var(--gray-900);
+  margin-bottom:8px;
+  padding-bottom:16px;
+  border-bottom:2px solid var(--primary);
+}
+.section h2{
+  font-size:20px;
+  font-weight:600;
+  color:var(--gray-800);
+  margin:32px 0 16px;
+  padding-left:12px;
+  border-left:4px solid var(--primary);
+}
+.section h3{
+  font-size:16px;
+  font-weight:600;
+  color:var(--gray-800);
+  margin:24px 0 12px;
+}
+.section h4{
+  font-size:14px;
+  font-weight:600;
+  color:var(--gray-700);
+  margin:16px 0 8px;
+}
+.section p{margin-bottom:12px}
+.section ul,.section ol{margin:12px 0 12px 24px}
+.section li{margin-bottom:6px}
+.section a{color:var(--primary);text-decoration:none;border-bottom:1px solid transparent;transition:border-color .15s}
+.section a:hover{border-bottom-color:var(--primary)}
+.section hr{border:0;border-top:1px dashed var(--border);margin:32px 0}
+.section blockquote{
+  background:var(--quote-bg);
+  border-left:4px solid var(--quote-border);
+  padding:12px 16px;
+  margin:16px 0;
+  color:var(--gray-700);
+  font-size:14px;
+  border-radius:0 4px 4px 0;
+}
+.section code{
+  background:var(--code-bg);
+  padding:2px 6px;
+  border-radius:3px;
+  font-family:Consolas,Monaco,monospace;
+  font-size:13px;
+  color:var(--accent);
+}
+.section pre{
+  background:var(--code-bg);
+  padding:12px 16px;
+  border-radius:4px;
+  overflow-x:auto;
+  font-size:13px;
+  margin:12px 0;
+}
 
-  /* ============ Tables ============ */
-  .table-wrap {
-    overflow-x: auto;
-    border-radius: 12px;
-    border: 1px solid var(--line);
-    background: var(--bg-card);
-    margin: 20px 0;
-  }
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 14.5px;
-    min-width: 600px;
-  }
-  thead {
-    background: linear-gradient(180deg, #fff5f5 0%, #ffe8e8 100%);
-  }
-  th {
-    padding: 14px 16px;
-    text-align: left;
-    font-weight: 700;
-    color: var(--primary-dark);
-    border-bottom: 2px solid var(--primary);
-    white-space: nowrap;
-  }
-  td {
-    padding: 14px 16px;
-    border-bottom: 1px solid var(--line);
-    color: var(--ink-2);
-  }
-  tbody tr:last-child td { border-bottom: none; }
-  tbody tr:hover { background: #fdf8f3; }
-  td strong { color: var(--ink); font-weight: 700; }
-  .tag {
-    display: inline-block;
-    padding: 3px 10px;
-    background: var(--bg);
-    border: 1px solid var(--line);
-    border-radius: 100px;
-    font-size: 12px;
-    color: var(--ink-2);
-    margin-right: 4px;
-  }
-  .tag-red {
-    background: #fff0f0;
-    color: var(--primary-dark);
-    border-color: #ffc4c4;
-  }
-  .tag-green {
-    background: #f0f7f3;
-    color: var(--green);
-    border-color: #c8e4d4;
-  }
-  .tag-blue {
-    background: #f0f5fa;
-    color: var(--blue);
-    border-color: #c4d9eb;
-  }
+/* ===== Tables ===== */
+.table-wrap{overflow-x:auto;margin:16px 0;border:1px solid var(--border);border-radius:4px}
+.section table{
+  width:100%;
+  border-collapse:collapse;
+  font-size:13.5px;
+  background:#fff;
+}
+.section table thead{
+  background:var(--gray-100);
+}
+.section table th{
+  padding:10px 12px;
+  text-align:left;
+  font-weight:600;
+  color:var(--gray-800);
+  border-bottom:2px solid var(--border);
+  white-space:nowrap;
+  font-size:13px;
+}
+.section table td{
+  padding:10px 12px;
+  border-bottom:1px solid var(--border);
+  vertical-align:top;
+  color:var(--gray-700);
+}
+.section table tbody tr:hover{background:var(--gray-50)}
+.section table tbody tr:last-child td{border-bottom:0}
+.section table .num{text-align:right;font-variant-numeric:tabular-nums}
+.section table .center{text-align:center}
+.section table .nowrap{white-space:nowrap}
 
-  /* ============ Callout ============ */
-  .callout {
-    background: linear-gradient(135deg, #fff8e8 0%, #fff3d0 100%);
-    border-left: 4px solid var(--accent);
-    padding: 18px 22px;
-    border-radius: 10px;
-    margin: 24px 0;
-    color: #6b5310;
-  }
-  .callout strong { color: #8b6914; }
-  .callout-red {
-    background: linear-gradient(135deg, #fff0f0 0%, #ffe0e0 100%);
-    border-left-color: var(--primary);
-    color: #6b0a18;
-  }
-  .callout-red strong { color: var(--primary-dark); }
+/* ===== Tag / Badge ===== */
+.tag{
+  display:inline-block;
+  padding:2px 8px;
+  border-radius:3px;
+  font-size:12px;
+  font-weight:500;
+  margin:0 2px;
+  white-space:nowrap;
+}
+.tag-A{background:#dcfce7;color:#166534}
+.tag-B{background:#dbeafe;color:#1e40af}
+.tag-C{background:#fef3c7;color:#92400e}
+.tag-D{background:#fee2e2;color:#991b1b}
+.tag-待补证{background:#fff7ed;color:#9a3412;font-style:italic}
 
-  /* ============ Case Study ============ */
-  .case {
-    background: var(--bg-card);
-    border-radius: 16px;
-    padding: 28px;
-    border: 2px solid var(--line);
-    position: relative;
-    overflow: hidden;
-  }
-  .case::before {
-    content: "CASE";
-    position: absolute;
-    top: 18px;
-    right: 20px;
-    font-size: 11px;
-    letter-spacing: 2px;
-    color: var(--ink-3);
-    opacity: 0.6;
-  }
-  .case h4 {
-    font-size: 18px;
-    margin-bottom: 16px;
-    color: var(--primary-dark);
-  }
-  .calc {
-    background: var(--bg);
-    border-radius: 10px;
-    padding: 18px;
-    margin-top: 16px;
-    font-family: "SF Mono", Menlo, Consolas, monospace;
-    font-size: 14px;
-    line-height: 1.9;
-  }
-  .calc .formula { color: var(--ink-3); }
-  .calc .result { color: var(--primary); font-weight: 700; font-size: 15px; }
+/* ===== Footer ===== */
+.footer{
+  text-align:center;
+  padding:32px 48px;
+  color:var(--text-muted);
+  font-size:13px;
+  border-top:1px solid var(--border);
+  background:#fff;
+}
+.footer a{color:var(--primary);text-decoration:none}
 
-  /* ============ Process ============ */
-  .process {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 0;
-    margin: 24px 0;
-    position: relative;
-  }
-  .step {
-    background: var(--bg-card);
-    border: 1px solid var(--line);
-    padding: 20px 16px;
-    text-align: center;
-    position: relative;
-    z-index: 2;
-  }
-  .step:first-child { border-radius: 12px 0 0 12px; }
-  .step:last-child { border-radius: 0 12px 12px 0; }
-  .step + .step { border-left: none; }
-  .step-num {
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    margin: 0 auto 10px;
-    font-size: 15px;
-  }
-  .step h5 {
-    font-size: 15px;
-    font-weight: 700;
-    margin-bottom: 6px;
-  }
-  .step p {
-    font-size: 13px;
-    color: var(--ink-3);
-    line-height: 1.5;
-  }
+/* ===== Print ===== */
+@media print{
+  .header{position:static}
+  .sidebar{display:none}
+  .main{padding:0}
+  .section{break-inside:avoid;box-shadow:none;border:1px solid #ccc}
+  body{background:#fff}
+}
 
-  /* ============ Compare ============ */
-  .compare {
-    background: var(--bg-card);
-    border-radius: 14px;
-    border: 1px solid var(--line);
-    overflow: hidden;
-    margin: 24px 0;
-  }
-  .compare-header {
-    background: var(--ink);
-    color: #fff;
-    padding: 14px 20px;
-    font-weight: 700;
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    gap: 10px;
-    font-size: 14px;
-  }
-  .compare-row {
-    display: grid;
-    grid-template-columns: 1.5fr 1fr 1fr;
-    gap: 10px;
-    padding: 14px 20px;
-    border-bottom: 1px solid var(--line);
-    font-size: 14px;
-  }
-  .compare-row:last-child { border-bottom: none; }
-  .compare-row > div:first-child { font-weight: 600; }
-  .highlight { color: var(--primary); font-weight: 700; }
-
-  /* ============ FAQ ============ */
-  .faq-item {
-    background: var(--bg-card);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    margin-bottom: 12px;
-    overflow: hidden;
-    transition: border-color .2s;
-  }
-  .faq-item.open { border-color: var(--primary); }
-  .faq-q {
-    padding: 16px 20px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 600;
-    user-select: none;
-  }
-  .faq-q::after {
-    content: "+";
-    color: var(--primary);
-    font-size: 24px;
-    font-weight: 300;
-    transition: transform .3s;
-  }
-  .faq-item.open .faq-q::after { content: "−"; }
-  .faq-a {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height .3s, padding .3s;
-    color: var(--ink-2);
-    font-size: 14.5px;
-    padding: 0 20px;
-    line-height: 1.8;
-  }
-  .faq-item.open .faq-a {
-    max-height: 500px;
-    padding: 0 20px 18px;
-  }
-
-  /* ============ Hotline ============ */
-  .hotline {
-    background: linear-gradient(135deg, #1a1a1a 0%, #3a0a14 100%);
-    color: #fff;
-    border-radius: 16px;
-    padding: 32px;
-    margin: 30px 0;
-  }
-  .hotline h3 {
-    color: #fff;
-    margin-bottom: 20px;
-    font-size: 22px;
-  }
-  .phone-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 12px;
-  }
-  .phone {
-    background: rgba(255,255,255,.06);
-    border: 1px solid rgba(255,255,255,.12);
-    padding: 14px 16px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .phone .area { font-size: 13px; opacity: .85; }
-  .phone .num {
-    font-family: "SF Mono", Menlo, monospace;
-    color: var(--accent);
-    font-weight: 700;
-    font-size: 15px;
-  }
-
-  /* ============ Footer ============ */
-  footer {
-    background: #1a1a1a;
-    color: #999;
-    padding: 30px 24px;
-    text-align: center;
-    font-size: 13px;
-    line-height: 1.8;
-  }
-  footer a { color: var(--accent); text-decoration: none; }
-
-  /* ============ Mobile ============ */
-  @media (max-width: 720px) {
-    .hero { padding: 50px 20px 60px; }
-    .container { padding: 40px 18px; }
-    section { margin-bottom: 40px; }
-    .compare-header, .compare-row {
-      grid-template-columns: 1.2fr 1fr 1fr;
-      font-size: 12.5px;
-      padding: 12px 14px;
-    }
-    .step:first-child { border-radius: 12px 12px 0 0; }
-    .step:last-child { border-radius: 0 0 12px 12px; }
-    .step + .step { border-left: 1px solid var(--line); border-top: none; }
-    .process { grid-template-columns: 1fr; }
-    h2 { font-size: 24px; }
-  }
+/* ===== Responsive ===== */
+@media (max-width:900px){
+  .layout{flex-direction:column}
+  .sidebar{position:static;width:100%;height:auto;border-right:0;border-bottom:1px solid var(--border)}
+  .main{padding:24px 16px}
+  .section{padding:24px 16px}
+  .header{padding:24px 16px}
+}
 </style>
 </head>
 <body>
 
-<!-- ========== HERO ========== -->
-<header class="hero">
-  <div class="hero-inner">
-    <span class="badge">金华医保 · 2025年1月1日起正式实施</span>
-    <h1>金华长护险<span class="hl">一图读懂</span><br>失能老人的"第六险"到底保什么？</h1>
-    <p class="lead">
-      长期护理保险（长护险）是社保体系的新成员，被称为继养老、医疗、工伤、生育、失业保险之后的<span style="color:#ffb800;font-weight:700">"第六险"</span>。
-      金华市自2025年1月1日起全面实施，覆盖全市职工医保与市区、东阳、义乌、永康的居民医保参保人。本文用最直白的方式帮你搞懂政策、缴费、待遇和申请。
-    </p>
-    <div class="hero-meta">
-      <div class="meta-item"><strong>政策文号</strong>金政办发〔2024〕36号</div>
-      <div class="meta-item"><strong>细则文号</strong>金医保发〔2024〕63号</div>
-      <div class="meta-item"><strong>筹资标准</strong>90元/年/人</div>
-      <div class="meta-item"><strong>目标人群</strong>重度失能人员</div>
-    </div>
+<header class="header">
+  <h1>长护险养老调研综合报告</h1>
+  <div class="sub">东阳 / 贵阳 / 合肥 · 三地长护险与养老服务数据汇编</div>
+  <div class="meta">
+    <span>数据时点：2026-07-23</span>
+    <span>项目代号：长护险养老调研-2026-07-23</span>
+    <span>项目执行：市场调研部</span>
+    <span>报告版本：V1.0</span>
   </div>
 </header>
 
-<div class="container">
+<div class="layout">
 
-  <!-- ========== 60秒看懂 ========== -->
-  <section>
-    <h2>60 秒看懂长护险</h2>
-    <p class="sub">一句话：长护险就是"政府+单位+个人"凑钱，给长期卧床、生活不能自理的老人请护工或送机构，国家帮你报销大头。</p>
+<aside class="sidebar">
+  <h3>目录</h3>
+  <ul>
+    <li><a href="#sec-overview">00 · 项目说明</a></li>
+    <li><a href="#sec-index">00 · 调研索引</a></li>
+    <li><a href="#sec-dongyang">01 · 东阳调研</a></li>
+    <li><a href="#sec-guiyang">02 · 贵阳调研</a></li>
+    <li><a href="#sec-hefei">03 · 合肥调研</a></li>
+    <li><a href="#sec-compare">04 · 三地对比</a></li>
+    <li><a href="#sec-sources-appendix">05 · 信源附录</a></li>
+    <li><a href="#sec-sources-tracker">00 · 信源追踪表</a></li>
+    <li><a href="#sec-data-report">06 · 数据汇编报告</a></li>
+  </ul>
 
-    <div class="stats">
-      <div class="stat">
-        <div class="stat-num">90<small>元/年</small></div>
-        <div class="stat-label">起步筹资标准<br>（职工个人仅掏一半）</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">80<small>%</small></div>
-        <div class="stat-label">居家护理基金<br>支付比例</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">70<small>%</small></div>
-        <div class="stat-label">机构护理基金<br>支付比例</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">25<small>小时/月</small></div>
-        <div class="stat-label">居家护理<br>服务时长上限</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">6<small>个月</small></div>
-        <div class="stat-label">失能持续时长<br>准入门槛</div>
-      </div>
-      <div class="stat">
-        <div class="stat-num">76<small>项</small></div>
-        <div class="stat-label">护理服务项目<br>（42生活+34医疗）</div>
-      </div>
-    </div>
-  </section>
+  <h3>关键事实速查</h3>
+  <ul>
+    <li><a href="#data-policy">长护险政策对比</a></li>
+    <li><a href="#data-population">老年人口与失能数据</a></li>
+    <li><a href="#data-procurement">3 地采购清单</a></li>
+    <li><a href="#data-sources">政策文件台账</a></li>
+  </ul>
 
-  <!-- ========== 参保对象 ========== -->
-  <section>
-    <h2>谁能参保？</h2>
-    <p class="sub">金华长护险"绑定"基本医保——只要你在参加医保，就自动参加长护险，<strong>不能单独参保</strong>。</p>
+  <h3>信源等级标识</h3>
+  <ul style="padding:0 24px 24px;font-size:12px;color:var(--text-muted);list-style:none">
+    <li><span class="tag tag-A">A</span> 政府/医保局/民政局原文</li>
+    <li style="margin-top:6px"><span class="tag tag-B">B</span> 地方党报/权威媒体</li>
+    <li style="margin-top:6px"><span class="tag tag-C">C</span> 政府采购公告平台</li>
+    <li style="margin-top:6px"><span class="tag tag-D">D</span> 第三方报道（辅助）</li>
+  </ul>
+</aside>
 
-    <div class="grid-2">
-      <div class="card">
-        <div class="icon">👥</div>
-        <h4>必参保人群</h4>
-        <p>金华市<strong>职工基本医疗保险</strong>（基本医疗保险一档）参保人员，覆盖在职职工、退休人员、灵活就业人员。</p>
-      </div>
-      <div class="card">
-        <div class="icon">🏘️</div>
-        <h4>城乡居民参保</h4>
-        <p>金华市区、东阳市、义乌市、永康市<strong>城乡居民基本医疗保险</strong>（二档、三档）参保人员。其他县市可根据实际推进。</p>
-      </div>
-      <div class="card">
-        <div class="icon">💼</div>
-        <h4>灵活就业人员</h4>
-        <p>参加职工医保的灵活就业人员参照职工标准执行，与单位职工享受同等待遇。</p>
-      </div>
-      <div class="card">
-        <div class="icon">🤝</div>
-        <h4>特殊困难人员</h4>
-        <p>享受政府资助参保的特殊困难人员（如特困、低保、残疾人等），个人缴费部分由<strong>财政全额补助</strong>。</p>
-      </div>
-    </div>
+<main class="main">
 
-    <div class="callout">
-      <strong>义乌特色：</strong>义乌市作为浙江省长护险先行试点城市，市级统筹前已享受待遇的人员和先行试点的<strong>重度失智</strong>人员仍按义乌原政策执行，待遇差由义乌市长护险基金历年结余列支。
-    </div>
-  </section>
+<!-- ============ 00-项目说明 ============ -->
+<section class="section" id="sec-overview">
+<h1>00 · 项目说明</h1>
 
-  <!-- ========== 缴费标准 ========== -->
-  <section>
-    <h2>一年要交多少钱？</h2>
-    <p class="sub">金华长护险实行<strong>按年缴费、定额筹资</strong>。起步阶段按每人每年 90 元的标准，资金由用人单位、个人、财政三方分担。</p>
+<h2>项目背景</h2>
+<p>合作机构计划在 <strong>东阳（浙江省金华市）</strong>、<strong>贵阳（贵州省贵阳市）</strong>、<strong>合肥（安徽省合肥市）</strong> 三地开展长期护理保险（以下简称"长护险"）相关业务，需要事先了解三地的：</p>
+<ol>
+  <li><strong>养老需求</strong> —— 老年人口规模、老龄化率、失能失智情况</li>
+  <li><strong>养老政策</strong> —— 长护险实施办法、养老服务清单、政府补贴标准</li>
+  <li><strong>政府采购</strong> —— 2023 年以来养老服务/长护险相关的中标项目、预算金额、中标供应商</li>
+</ol>
 
-    <div class="table-wrap">
-      <table>
-        <thead>
-          <tr>
-            <th>参保身份</th>
-            <th>个人缴费</th>
-            <th>单位/统筹/财政</th>
-            <th>合计</th>
-            <th>划扣方式</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>职工医保在职</strong></td>
-            <td>45 元</td>
-            <td>用人单位 45 元</td>
-            <td><span class="tag tag-red">90 元</span></td>
-            <td>每年 1/1 前从<strong>医保个人账户</strong>代扣代缴；单位部分通过医保费率平移划转，<strong>不增加单位负担</strong></td>
-          </tr>
-          <tr>
-            <td><strong>职工医保退休</strong></td>
-            <td>45 元</td>
-            <td>医保统筹基金 45 元</td>
-            <td><span class="tag tag-red">90 元</span></td>
-            <td>每年 1/1 前从医保个人账户代扣</td>
-          </tr>
-          <tr>
-            <td><strong>灵活就业人员</strong></td>
-            <td>45 元</td>
-            <td>参照职工标准</td>
-            <td><span class="tag tag-red">90 元</span></td>
-            <td>参照职工医保渠道执行</td>
-          </tr>
-          <tr>
-            <td><strong>居民医保参保人</strong></td>
-            <td>30 元</td>
-            <td>财政补助 60 元</td>
-            <td><span class="tag tag-red">90 元</span></td>
-            <td>与基本医保<strong>同步征缴</strong></td>
-          </tr>
-          <tr>
-            <td><strong>18 周岁以下</strong></td>
-            <td colspan="4" style="color:var(--green)">免缴长护险费（跟随父母或法定抚养人参保，享受居民待遇）</td>
-          </tr>
-          <tr>
-            <td><strong>特困/低保等</strong></td>
-            <td colspan="4" style="color:var(--green)">个人缴费由<strong>当地财政全额补助</strong></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+<h2>调研方法</h2>
+<ul>
+  <li>基于公开渠道采集与系统整理：政府门户网站、医保局官网、民政局官网、地方公共资源交易中心、人民日报/新华社等权威媒体</li>
+  <li>数据采集范围：长护险政策、养老政策、政府采购、老年人口 4 个维度</li>
+  <li>重点时段：2023 年以来的政府采购与政策文件</li>
+  <li>数据可追溯：每条结论附原始链接；关键数据交叉验证</li>
+  <li>重要观点无信源：标注 <span class="tag tag-待补证">待补证</span></li>
+</ul>
 
-    <div class="callout callout-red">
-      <strong>2026 年度最新缴费标准</strong>（已发布）：市区城乡居民三档个人缴费 <strong>670 元</strong>（含长护险 30 元，财政补助 1215 元含长护险 60 元）；二档个人缴费 <strong>2650 元</strong>（含长护险 30 元）。缴费时间 2025 年 10 月 17 日—12 月 25 日，浙里办/支付宝/微信/银行均可办理。
-    </div>
-  </section>
+<h2>调研范围</h2>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th>城市</th><th>行政级别</th><th>长护险状态</th><th>调研时点</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>东阳</strong></td><td>浙江省金华市辖县级市</td><td>2025-01-01 起随金华市办法统一实施（金政办发〔2024〕36 号）</td><td>2023-2026</td></tr>
+<tr><td><strong>贵阳</strong></td><td>贵州省省会</td><td>黔西南州先试点（2020-09 列为全国第二批），遵义/铜仁 2026 年启动；贵阳 <span class="tag tag-待补证">待补证</span></td><td>2023-2026</td></tr>
+<tr><td><strong>合肥</strong></td><td>安徽省省会</td><td>全市统一长护险办法 <span class="tag tag-待补证">待补证</span>；现行主要为"特困人员长期医疗护理保险"</td><td>2023-2026</td></tr>
+</tbody>
+</table>
+</div>
 
-  <!-- ========== 待遇标准 ========== -->
-  <section>
-    <h2>能享受什么待遇？</h2>
-    <p class="sub">长护险待遇<strong>不设起付标准</strong>，根据护理服务方式（居家或机构）实行差别化报销。</p>
+<h2>信源等级标准</h2>
+<ul>
+  <li><span class="tag tag-A">A</span> <strong>A 级（官方原始）</strong>：政府/医保局/民政局官网原文、人民日报、新华社、中央政府门户</li>
+  <li><span class="tag tag-B">B</span> <strong>B 级（权威媒体）</strong>：地方党报、行业权威媒体</li>
+  <li><span class="tag tag-C">C</span> <strong>C 级（公告平台）</strong>：中国政府采购网、全国/地方公共资源交易平台</li>
+  <li><span class="tag tag-D">D</span> <strong>D 级（其他）</strong>：搜狐、网易、采招网、第三方报道（仅作辅助参考）</li>
+</ul>
 
-    <div class="grid-2">
-      <div class="card">
-        <div class="icon" style="background:linear-gradient(135deg,#2e8b57,#1f6b41)">🏠</div>
-        <h4>居家护理服务</h4>
-        <p>由定点护理服务机构上门提供服务。每月不超过 <strong>25 小时</strong>，按 <strong>60 元/小时</strong> 结算，<span class="highlight">基金支付 80%</span>。</p>
-        <p style="margin-top:10px;font-size:13px;color:var(--ink-3)">每周上门不少于 2 次，每次不少于 1 小时。偏远山区可由培训后的亲属、邻里护理，25 元/日。</p>
-      </div>
-      <div class="card">
-        <div class="icon" style="background:linear-gradient(135deg,#1e6091,#134867)">🏥</div>
-        <h4>机构护理服务</h4>
-        <p>入住定点护理机构。按 <strong>80 元/床日</strong> 结算（每月最高约 2400 元），<span class="highlight">基金支付 70%</span>。</p>
-        <p style="margin-top:10px;font-size:13px;color:var(--ink-3)">机构床位费、膳食费等非护理费用基金不予支付。</p>
-      </div>
-    </div>
+<h2>关键联系人</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>城市</th><th>主管部门</th><th>联系电话</th><th>信源</th></tr></thead>
+<tbody>
+<tr><td>金华市</td><td>金华市医保局</td><td>0579-83472213</td><td>长护险实施细则</td></tr>
+<tr><td>东阳</td><td>东阳市民政局</td><td>0579-86655102</td><td>采购意向</td></tr>
+<tr><td>贵阳</td><td>贵阳市民政局</td><td>13639066690</td><td>适老化改造采购</td></tr>
+<tr><td>合肥</td><td>合肥市民政局</td><td>0551-62755522</td><td>扶持政策清单</td></tr>
+<tr><td>安徽</td><td>安徽公共资源交易集团</td><td>0551-66223645</td><td>政府采购代理</td></tr>
+</tbody>
+</table>
+</div>
+</section>
 
-    <h3>直观算一笔账</h3>
+<!-- ============ 00-调研索引 ============ -->
+<section class="section" id="sec-index">
+<h1>00 · 调研索引</h1>
 
-    <div class="grid-2">
-      <div class="case">
-        <h4>🏠 居家护理案例 · 张某</h4>
-        <p style="color:var(--ink-2)">重度失能老人，选择居家护理，每月享受 25 小时上门服务（含沐浴、理发等 42 项生活照料 + 吸痰、换药等 34 项医疗护理）。</p>
-        <div class="calc">
-          <div class="formula">基金支付 = 60 元/小时 × 25 小时 × 80%</div>
-          <div class="result">基金支付：1200 元 / 月</div>
-          <div class="formula">个人承担 = 60 × 25 × 20%</div>
-          <div class="result">个人承担：300 元 / 月</div>
-        </div>
-      </div>
+<h2>速查表</h2>
 
-      <div class="case">
-        <h4>🏥 机构护理案例 · 王某</h4>
-        <p style="color:var(--ink-2)">重度失能老人，入住定点护理机构，机构按规范标准提供护理，每月护理费用 2400 元。</p>
-        <div class="calc">
-          <div class="formula">基金支付 = 80 元/床日 × 30 日 × 70%</div>
-          <div class="result">基金支付：1680 元 / 月</div>
-          <div class="formula">个人承担 = 2400 − 1680</div>
-          <div class="result">个人承担：720 元 / 月</div>
-        </div>
-      </div>
-    </div>
+<h3>三地长护险核心信息</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>维度</th><th>东阳</th><th>贵阳</th><th>合肥</th></tr></thead>
+<tbody>
+<tr><td>适用政策</td><td>金华市长护险办法（金政办发〔2024〕36 号）</td><td>贵州省实施意见（2028 年底全覆盖）</td><td>特困人员长护险先行，全市统一办法 <span class="tag tag-待补证">待补证</span></td></tr>
+<tr><td>启动时点</td><td>2025-01-01</td><td>黔西南州 2020-09 / 遵义·铜仁 2026；贵阳 <span class="tag tag-待补证">待补证</span></td><td>特困人员：2022 起；全市统一 <span class="tag tag-待补证">待补证</span></td></tr>
+<tr><td>筹资标准</td><td>90 元/人/年</td><td>全省统一 0.3%</td><td>——</td></tr>
+<tr><td>待遇支付</td><td>居家 60 元/h（≤25h/月，基金 80%）；机构 80 元/床日（70%）</td><td>职工/退休 70%；未就业居民 50%</td><td>特困人员 350 元/人</td></tr>
+<tr><td>统筹层级</td><td>金华市市级统筹</td><td>市（州）级统筹</td><td>——</td></tr>
+</tbody>
+</table>
+</div>
 
-    <div class="callout">
-      <strong>不纳入基金支付的情形：</strong>①应当由医疗保险、工伤保险基金支付的；②应当由第三人负担的；③应当由公共卫生负担的；④非协议管理定点机构发生的；⑤其他法律法规规定不予支付的。同时符合长护险与养老护理补贴的，原则上择一享受；享受特困/失能低保入住养老机构护理的对象不再享受长护险待遇。
-    </div>
-  </section>
+<h3>三地老年人口对比</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>维度</th><th>东阳</th><th>贵阳</th><th>合肥</th></tr></thead>
+<tbody>
+<tr><td>60+ 老年人口</td><td><span class="tag tag-待补证">待补证</span></td><td><strong>82.7 万</strong>（13.3%，2023-10 截至）</td><td><strong>159.38 万</strong>（19.75%，2023 年底）</td></tr>
+<tr><td>65+ 老年人口</td><td>——</td><td>——</td><td><strong>121.98 万</strong>（15.11%）</td></tr>
+<tr><td>失能/部分失能</td><td>——</td><td>12 万名 65+ 失能老人</td><td><strong>4.27 万</strong></td></tr>
+<tr><td>百岁老人</td><td>——</td><td>——</td><td><strong>803 人</strong>（2024-09）</td></tr>
+<tr><td>空巢老人</td><td>——</td><td>——</td><td><strong>80 万+</strong>（12 万独居）</td></tr>
+</tbody>
+</table>
+</div>
 
-  <!-- ========== 享受条件 ========== -->
-  <section>
-    <h2>符合什么条件才能享受？</h2>
-    <p class="sub">不是所有失能都能享受，必须满足"两个 6 个月 + 一个重度"。</p>
+<h3>三地 2023 年以来养老/长护险政府采购核心数据</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>维度</th><th>东阳</th><th>贵阳</th><th>合肥</th></tr></thead>
+<tbody>
+<tr><td>代表性大单</td><td>居家养老服务 4 标段（2024-04）</td><td>适老化改造 2165 户（2024-11）</td><td>肥西县居家养老 4 标段（1400 万）+ 特困长护险（1482 万/年）</td></tr>
+<tr><td>适老化改造</td><td>善居工程 2023 41 户/2025 30 户/2026 30 户</td><td>2024 一期 2165 户 + 二期 994 户</td><td>2025 底前 1 万户</td></tr>
+<tr><td>长护险经办</td><td>暂无单独经办（金华市统筹）</td><td>黔西南州：平安养老贵州分公司</td><td>特困人员 2024 年 1482 万（人保财险华东中心）</td></tr>
+<tr><td>信息化</td><td>智能服务终端 100 万（2022）</td><td>失能评估、长期照护师培训</td><td>智能门磁 240 万/3 年 + 用电监测 50 万</td></tr>
+<tr><td>老年食堂/助餐</td><td>247 家居家养老照料中心</td><td>25 个街道中心 + 264 个社区站</td><td>2023 末累计 1100+ 个</td></tr>
+</tbody>
+</table>
+</div>
 
-    <div class="grid-3">
-      <div class="card">
-        <div class="icon">⏱️</div>
-        <h4>失能 ≥ 6 个月</h4>
-        <p>经医疗机构或康复机构规范诊疗，<strong>失能状态持续 6 个月以上</strong>，或因年老失能。</p>
-      </div>
-      <div class="card">
-        <div class="icon">📋</div>
-        <h4>通过失能等级评估</h4>
-        <p>向长护险失能等级评估委员会申请评估，认定符合<strong>重度失能标准</strong>。评估结论分四级。</p>
-      </div>
-      <div class="card">
-        <div class="icon">✅</div>
-        <h4>正常享受医保待遇</h4>
-        <p>长护险待遇享受时间与基本医保待遇保持一致，中断缴费会影响待遇。</p>
-      </div>
-    </div>
+<h3>待补证事项</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>编号</th><th>城市</th><th>事项</th><th>建议补充来源</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>合肥</td><td>全市统一长护险办法是否已出台</td><td>合肥市医保局、安徽省医保局</td></tr>
+<tr><td>2</td><td>贵阳</td><td>贵阳市本市长护险启动时点</td><td>贵阳市医保局、贵阳日报</td></tr>
+<tr><td>3</td><td>东阳</td><td>东阳市本级 60+ 老年人口具体数</td><td>东阳市民政局、东阳市统计局</td></tr>
+<tr><td>4</td><td>合肥</td><td>2025-2027 长护险承办服务 3.59 亿具体承接商</td><td>合肥市医保局</td></tr>
+</tbody>
+</table>
+</div>
+</section>
 
-    <div class="callout callout-red">
-      <strong>起付时间：</strong>评估认定符合重度失能标准的参保人员，<strong>自作出评估结论的次月起</strong>按规定享受长护险待遇。<br>
-      <strong>失能等级评估申请受理时间：</strong>2025 年 1 月 1 日起。
-    </div>
-  </section>
+<!-- ============ 01-东阳调研 ============ -->
+<section class="section" id="sec-dongyang">
+<h1>01 · 东阳市调研报告</h1>
+<blockquote>浙江省金华市辖县级市，2025-01-01 起随金华市办法统一实施长护险</blockquote>
 
-  <!-- ========== 申请流程 ========== -->
-  <section>
-    <h2>怎么办理？申请流程 5 步走</h2>
+<h2>一、长期护理保险政策</h2>
 
-    <div class="process">
-      <div class="step">
-        <div class="step-num">1</div>
-        <h5>提出申请</h5>
-        <p>本人/监护人/委托代理人通过浙里办 APP、医保窗口、乡镇卫生院、定点机构提出</p>
-      </div>
-      <div class="step">
-        <div class="step-num">2</div>
-        <h5>受理审核</h5>
-        <p>医保经办机构受理申请，审核是否符合失能条件</p>
-      </div>
-      <div class="step">
-        <div class="step-num">3</div>
-        <h5>失能评估</h5>
-        <p>专家库抽取评估人员上门评估，按浙江省评估规范打分</p>
-      </div>
-      <div class="step">
-        <div class="step-num">4</div>
-        <h5>结论公示</h5>
-        <p>出具评估结论，符合重度失能者公示后进入待遇享受阶段</p>
-      </div>
-      <div class="step">
-        <div class="step-num">5</div>
-        <h5>享受待遇</h5>
-        <p>次月起享受居家或机构护理服务，费用由长护险基金按比例支付</p>
-      </div>
-    </div>
+<h3>1.1 政策依据（核心 A 级信源）</h3>
+<ul>
+  <li><strong>金华市长护险实施办法（金政办发〔2024〕36 号）</strong> —— 2024-09-28 成文，2025-01-01 起施行
+    <ul>
+      <li>原文：<a href="https://www.jinhua.gov.cn/art/2024/9/30/art_1229562305_1810017.html">金华市政府官网</a> <span class="tag tag-A">A</span></li>
+      <li>政策解读：<a href="http://www.jinhua.gov.cn/art/2024/9/30/art_1229759725_1810025.html">解读</a> <span class="tag tag-A">A</span></li>
+    </ul>
+  </li>
+  <li><strong>金华市长护险实施细则（金医保发〔2024〕63 号）</strong> —— 2024-11-30 联合印发
+    <ul>
+      <li>原文：<a href="http://ybj.jinhua.gov.cn/art/2025/4/29/art_1229794817_1818944.html">金华市医保局</a> <span class="tag tag-A">A</span></li>
+      <li>政策解读：<a href="https://m12333.cn/qa/pipmp.html">解读</a> <span class="tag tag-B">B</span></li>
+    </ul>
+  </li>
+  <li><strong>依据上层次文件</strong>：浙政办发〔2023〕73 号 / 浙医保联发〔2022〕6 号</li>
+</ul>
 
-    <h3>线上申请主入口</h3>
-    <div class="grid-3">
-      <div class="card">
-        <div class="icon">📱</div>
-        <h4>浙里办 APP</h4>
-        <p>搜索"浙里医保" → 失能等级评估模块，全程线上办理，<strong>推荐渠道</strong>。</p>
-      </div>
-      <div class="card">
-        <div class="icon">🏥</div>
-        <h4>医保经办窗口</h4>
-        <p>市/县（市、区）医保经办机构服务大厅，线下办理。</p>
-      </div>
-      <div class="card">
-        <div class="icon">🏘️</div>
-        <h4>乡镇/社区卫生服务中心</h4>
-        <p>就近办理，咨询、申请、初审一站搞定。</p>
-      </div>
-    </div>
-  </section>
+<h3>1.2 关键政策要点</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>维度</th><th>内容</th><th>来源</th></tr></thead>
+<tbody>
+<tr><td><strong>覆盖范围</strong></td><td>2025 年起覆盖金华全市职工医保参保人 + 金华市区、东阳市、义乌市、永康市居民医保参保人</td><td>金政办发〔2024〕36 号</td></tr>
+<tr><td><strong>筹资标准</strong></td><td>起步阶段 <strong>90 元/人/年</strong></td><td>金政办发〔2024〕36 号</td></tr>
+<tr><td><strong>职工筹资</strong></td><td>在职：个人 45 + 单位 45；退休：个人 45 + 医保统筹基金 45；灵活就业参照职工</td><td>金政办发〔2024〕36 号</td></tr>
+<tr><td><strong>居民筹资</strong></td><td>个人 30 + 财政 60（1:2）</td><td>金政办发〔2024〕36 号</td></tr>
+<tr><td><strong>享受条件</strong></td><td>失能状态持续 6 个月以上，经评估认定符合重度失能标准</td><td>金政办发〔2024〕36 号</td></tr>
+<tr><td><strong>居家护理</strong></td><td>60 元/小时，每人每月 ≤ 25 小时，<strong>基金支付 80%</strong></td><td>金政办发〔2024〕36 号</td></tr>
+<tr><td><strong>机构护理</strong></td><td>≤ 80 元/床日，<strong>基金支付 70%</strong></td><td>金政办发〔2024〕36 号</td></tr>
+<tr><td><strong>偏远山区</strong></td><td>亲属/邻里经培训后护理，25 元/日，基金 80%</td><td>金政办发〔2024〕36 号</td></tr>
+<tr><td><strong>统筹层级</strong></td><td>金华市市级统筹（义乌市试点基金结余留存义乌）</td><td>金政办发〔2024〕36 号</td></tr>
+<tr><td><strong>风险金</strong></td><td>按当年长护险保费的 10% 提取，累计 ≥ 6 个月可支付能力</td><td>金政办发〔2024〕36 号</td></tr>
+<tr><td><strong>失能评估</strong></td><td>分初次/争议复评/重新评估，4 级（基本正常/轻/中/重）</td><td>金医保发〔2024〕63 号</td></tr>
+<tr><td><strong>评估申请</strong></td><td>浙里办 APP / 医保经办机构窗口 / 乡镇卫生院 / 定点长护服务机构</td><td>金医保发〔2024〕63 号</td></tr>
+<tr><td><strong>东阳市参保时间</strong></td><td>2025-01-01 同步参加</td><td>金政办发〔2024〕36 号附则</td></tr>
+</tbody>
+</table>
+</div>
 
-  <!-- ========== 全国横向对比 ========== -->
-  <section>
-    <h2>横向对比：金华 vs 全国</h2>
-    <p class="sub">把金华的政策放到全国 49 个试点城市里看，定位清晰多了。</p>
+<h3>1.3 2026 年缴费标准（东阳市居民医保）</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>档次</th><th>个人缴费（基本医保+长护险）</th><th>财政补助</th><th>长护险 18 岁以下免缴</th></tr></thead>
+<tbody>
+<tr><td>三档</td><td>670 元 = 640 + 30</td><td>1215 元 = 1155 + 60</td><td>个人 640 元</td></tr>
+<tr><td>二档</td><td>2650 元 = 2620 + 30</td><td>1215 元 = 1155 + 60</td><td>个人 2620 元</td></tr>
+</tbody>
+</table>
+</div>
+<p>数据来源：<a href="https://new.qq.com/rain/a/20250928A07PPR00">金华医保 2025-09-28 通告</a> <span class="tag tag-A">A</span></p>
 
-    <div class="compare">
-      <div class="compare-header">
-        <div>维度</div>
-        <div>金华（2025）</div>
-        <div>国家方案（2025）</div>
-      </div>
-      <div class="compare-row">
-        <div>基准费率</div>
-        <div>定额 90 元/年</div>
-        <div>总体 0.3% 左右</div>
-      </div>
-      <div class="compare-row">
-        <div>职工筹资</div>
-        <div>个人 45 + 单位 45</div>
-        <div>单位 0.15% + 个人 0.15%</div>
-      </div>
-      <div class="compare-row">
-        <div>居民筹资</div>
-        <div>个人 30 + 财政 60</div>
-        <div>个人:财政 ≈ 1:1</div>
-      </div>
-      <div class="compare-row">
-        <div>报销 · 机构护理</div>
-        <div class="highlight">70%</div>
-        <div>70% 左右</div>
-      </div>
-      <div class="compare-row">
-        <div>报销 · 居民</div>
-        <div class="highlight">80%（居家）/ 70%（机构）</div>
-        <div>50% 左右</div>
-      </div>
-      <div class="compare-row">
-        <div>失能准入</div>
-        <div class="highlight">6 个月 + 重度</div>
-        <div>6 个月 + 失能评估</div>
-      </div>
-      <div class="compare-row">
-        <div>起步保障对象</div>
-        <div class="highlight">重度失能（含义乌失智）</div>
-        <div>重度失能起步</div>
-      </div>
-      <div class="compare-row">
-        <div>管理统筹</div>
-        <div class="highlight">市级统筹</div>
-        <div>以地市级统筹为主</div>
-      </div>
-    </div>
+<h3>1.4 东阳 2024 年长护险目标参保任务</h3>
+<ul>
+  <li>浙江省 2024 年将"推进长护险扩面"纳入民生实事，<strong>金华市目标参保任务数 300 万人</strong>（金政办发〔2024〕36 号政策解读）</li>
+</ul>
 
-    <div class="callout">
-      <strong>金华亮点：</strong>①<strong>市级统筹</strong>——全市统一政策、统一筹资、统一待遇，避免碎片化；②<strong>义乌试点</strong>平滑衔接，失能失智都覆盖；③<strong>偏远山区</strong>特别条款：机构上不了门时亲属、邻里护理也能报销 25 元/日的 80%；④起步筹资 90 元在全国属较低水平，职工只掏 45 元/月即可撬动每月上千元的护理服务。
-    </div>
-  </section>
+<h2>二、养老政策</h2>
 
-  <!-- ========== 常见问答 ========== -->
-  <section>
-    <h2>常见问答 FAQ</h2>
-    <p class="sub">把金华医保局官方问答里大家最关心的点整理在这里。</p>
+<h3>2.1 困难老年人补贴制度（东阳市民政局+财政局 2024-08-29 施行）</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>补贴类型</th><th>对象</th><th>标准</th></tr></thead>
+<tbody>
+<tr><td><strong>养老服务补贴</strong></td><td>低保家庭 60+ 失能/失智及生活能自理的 80+ 老人；其他 90+ 老人</td><td>按评估结果发放</td></tr>
+<tr><td><strong>养老护理补贴</strong></td><td>低保失能中度</td><td>250 元/月</td></tr>
+<tr><td><strong>养老护理补贴</strong></td><td>低保失能重度</td><td>500 元/月</td></tr>
+<tr><td><strong>高龄爱心补贴</strong></td><td>90+ 老年人</td><td>50 元/月</td></tr>
+</tbody>
+</table>
+</div>
+<blockquote>2023 年福彩公益金项目"养老服务补贴"预算 22.5 万元，年度受益 4.8 万人次</blockquote>
 
-    <div class="faq-item open">
-      <div class="faq-q">长护险和医保有什么区别？</div>
-      <div class="faq-a">医保管"治病"，长护险管"长期照料护理"。医保不报销请护工、照料卧床老人等生活照料费用，而长护险专门为<strong>长期失能</strong>人员的基本生活照料和相关医疗护理提供服务和资金保障，是独立的第六个社保险种。</div>
-    </div>
+<h3>2.2 适老化改造</h3>
+<ul>
+  <li>最高补贴 <strong>2 万元/户</strong>（2026 年东阳市困难家庭"善居工程"项目，户均上限 1.6 万，实施 30 户）</li>
+  <li>2023 年：东阳完成 41 户困难老年人家庭适老化改造，预算 31.2 万元</li>
+</ul>
 
-    <div class="faq-item">
-      <div class="faq-q">我每年交 90 元，能拿回多少？</div>
-      <div class="faq-a">长护险不是"返还型"，是"互助共济"——所有人交的钱放进基金池，给符合条件的人使用。只要评估为重度失能，居家护理基金每月最多支付 <strong>1200 元</strong>，机构护理每月最多支付 <strong>1680 元</strong>，远超个人缴费。</div>
-    </div>
+<h3>2.3 居家养老服务照料中心建设</h3>
+<ul>
+  <li>2023 年末东阳共有 <strong>247 家居家养老照料（服务）中心</strong>，2023 年运行服务补助 <strong>294.8 万元</strong></li>
+  <li>2023 年新增 2 家居家养老照料中心，建设补助 13 万元</li>
+  <li>2022 年东阳市民政局"居家养老服务中心智能服务终端建设"预算 100 万元</li>
+</ul>
 
-    <div class="faq-item">
-      <div class="faq-q">年轻人也要交吗？</div>
-      <div class="faq-a">是的，只要参加金华基本医保就同步参加长护险，包括年轻人。但<strong>18 周岁以下</strong>城乡居民参保人免缴长护险费（跟父母参保），年青时缴费是为将来的自己兜底。</div>
-    </div>
+<h3>2.4 认知障碍照护专区</h3>
+<ul>
+  <li>2023 年东阳认知障碍照护专区建设补助 <strong>240 万元</strong>，新增床位 160 张</li>
+</ul>
 
-    <div class="faq-item">
-      <div class="faq-q">单位那 45 元会给我加负担吗？</div>
-      <div class="faq-a">不会。金华明确规定<strong>单位缴费部分通过医保费率平移转换方式从其缴纳的职工医保费中划转，不增加单位负担</strong>。对企业而言是"换口袋"。</div>
-    </div>
+<h3>2.5 2023 年东阳市民政局福利彩票公益金项目（11 项 / 约 1049.5 万元）</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>项目</th><th class="num">预算（元）</th><th>受益数</th></tr></thead>
+<tbody>
+<tr><td>居家养老智能终端服务</td><td class="num">442,000</td><td>1200 人</td></tr>
+<tr><td>居家养老照料（服务）中心运行服务补助</td><td class="num">2,948,000</td><td>4100 人</td></tr>
+<tr><td>居家养老照料中心建设补助</td><td class="num">130,000</td><td>150 人</td></tr>
+<tr><td>困难老年人适老化改造</td><td class="num">312,000</td><td>41 户</td></tr>
+<tr><td>养老服务补贴</td><td class="num">225,000</td><td>48,000 人次</td></tr>
+<tr><td>认知障碍照护专区建设补助</td><td class="num">2,400,000</td><td>160 张床位</td></tr>
+<tr><td>社工站项目运行补助</td><td class="num">1,453,000</td><td>50+ 万人次</td></tr>
+<tr><td>社会组织公益创投项目</td><td class="num">767,000</td><td>130,000 人次</td></tr>
+<tr><td>困境儿童助学</td><td class="num">110,000</td><td>13 人</td></tr>
+<tr><td>残联困难家庭无障碍设施</td><td class="num">521,000</td><td>102 户</td></tr>
+<tr><td>社会福利院改造项目</td><td class="num">1,187,000</td><td>140 人，6486.97 ㎡</td></tr>
+<tr style="font-weight:600;background:var(--gray-50)"><td><strong>合计</strong></td><td class="num"><strong>~10,495,000</strong></td><td>——</td></tr>
+</tbody>
+</table>
+</div>
 
-    <div class="faq-item">
-      <div class="faq-q">失能了但没参保，能申请吗？</div>
-      <div class="faq-a">不能。长护险是社会保险，必须先参保并正常享受医保待遇。如果中断缴费后再参保，按规定可能有<strong>待遇等待期</strong>（参考国家方案一般 6 个月起步），建议持续参保。</div>
-    </div>
+<h3>2.6 长三角协同</h3>
+<ul>
+  <li>2025-01-09 浙江省民政厅《关于公开中度以上失能老年人养老服务消费补贴发放咨询电话的公告》</li>
+  <li>2026-01-01 全国实施（中度以上失能老人养老服务消费补贴，每月最高 800 元消费券）</li>
+  <li>东阳已纳入浙江省"长三角异地养老机构"协调推进</li>
+</ul>
 
-    <div class="faq-item">
-      <div class="faq-q">可以在家里让家人护理吗？</div>
-      <div class="faq-a">一般情况下，长护险要求<strong>定点服务机构</strong>提供服务。但在政策实施初期的<strong>偏远山区</strong>，如果机构无法上门，可由经护理实践培训的亲属、邻里提供护理，支付标准 25 元/日，基金支付 80%。</div>
-    </div>
+<h3>2.7 东阳市民政局咨询电话</h3>
+<ul>
+  <li>许红檑（养老业务）：0579-86655189</li>
+  <li>厉先生（采购）：0579-86020629</li>
+  <li>局办公室：0579-86655102</li>
+</ul>
 
-    <div class="faq-item">
-      <div class="faq-q">评估没过能复评吗？</div>
-      <div class="faq-a">可以。失能等级评估分<strong>初次评估、争议复评、重新评估</strong>三种类型。若对初次评估结论有异议，可按规定申请争议复评。</div>
-    </div>
+<h2>三、政府采购（2023 年以来）</h2>
 
-    <div class="faq-item">
-      <div class="faq-q">金华以外的城市能用吗？</div>
-      <div class="faq-a">目前金华长护险仅在金华市行政区域内有效，异地居住人员的护理服务原则上仍需回到金华定点机构。若长期异地居住，需关注后续跨省异地结算政策。</div>
-    </div>
-  </section>
+<h3>3.1 2023 年东阳市民政局居家养老服务项目（4 标段）</h3>
+<ul>
+  <li>项目编号：DYSC2024-003</li>
+  <li>发布时间：2024-04-24</li>
+  <li>采购人：东阳市民政局</li>
+  <li>代理：东阳市思存工程管理服务有限公司</li>
+  <li>中标方式：竞争性磋商（4 个标段）</li>
+</ul>
+<div class="table-wrap">
+<table>
+<thead><tr><th>标项</th><th>中标供应商</th><th class="num">报价（元）</th><th class="num">总分</th></tr></thead>
+<tbody>
+<tr><td rowspan="4"><strong>标 1 区域一</strong></td><td><strong>东阳市亲乐园公寓投资有限公司（联合体）</strong></td><td class="num">20</td><td class="num"><strong>92.00</strong></td></tr>
+<tr><td>杭州九如城养老服务有限公司</td><td class="num">22</td><td class="num">86.80</td></tr>
+<tr><td>浙江宏爱助老为老养老服务有限公司</td><td class="num">24.8</td><td class="num">83.55</td></tr>
+<tr><td>宁波茗山家护信息技术有限公司</td><td class="num">24.8</td><td class="num">78.47</td></tr>
+<tr><td rowspan="4"><strong>标 2 区域二</strong></td><td><strong>东阳市亲乐园公寓投资有限公司（联合体）</strong></td><td class="num">20</td><td class="num"><strong>90.66</strong></td></tr>
+<tr><td>杭州九如城养老服务有限公司</td><td class="num">22</td><td class="num">86.82</td></tr>
+<tr><td>杭州义蓬颐康医院管理有限公司</td><td class="num">22</td><td class="num">85.32</td></tr>
+<tr><td>浙江宏爱助老为老养老服务有限公司</td><td class="num">24.8</td><td class="num">84.23</td></tr>
+<tr><td rowspan="2"><strong>标 3 区域三</strong></td><td><strong>杭州九如城养老服务有限公司</strong></td><td class="num">22</td><td class="num"><strong>86.80</strong></td></tr>
+<tr><td>浙江宏爱助老为老养老服务有限公司</td><td class="num">24.8</td><td class="num">83.89</td></tr>
+<tr><td rowspan="2"><strong>标 4 区域四</strong></td><td><strong>东阳市亲乐园公寓投资有限公司（联合体）</strong></td><td class="num">20</td><td class="num"><strong>91.98</strong></td></tr>
+<tr><td>杭州九如城养老服务有限公司</td><td class="num">22</td><td class="num">86.84</td></tr>
+</tbody>
+</table>
+</div>
+<p>来源：<a href="https://www.bidcenter.com.cn/newscontent-281798939-4.html">采招网 2024-04-24 公告</a> <span class="tag tag-C">C</span></p>
 
-  <!-- ========== 咨询电话 ========== -->
-  <section>
-    <h2>政策咨询电话</h2>
-    <p class="sub">有问题直接打，不要在网上查来查去。</p>
+<h3>3.2 2024-2025 年养老服务体系建设（省级公益金老年人意外伤害险）</h3>
+<ul>
+  <li>2024 年合同公告：中标金额 <strong>80 万元</strong>（来源：<a href="https://www.bidcenter.com.cn/news-296629372-4.html">采招网 2024-07-10</a> <span class="tag tag-C">C</span>）</li>
+  <li>2025 年公开招标（JCZFCG2025-Z30-C539-03）：
+    <ul>
+      <li>2025-07-23 首次招标流标</li>
+      <li>2025-08-13 第二次招标流标</li>
+      <li>2025-09-04 第三次中标：<strong>中国人民财产保险股份有限公司金华市分公司</strong>，合同金额 0 元（财政公益金全额）</li>
+    </ul>
+  </li>
+</ul>
 
-    <div class="hotline">
-      <h3>金华市长护险咨询热线</h3>
-      <div class="phone-grid">
-        <div class="phone"><span class="area">金华市区</span><span class="num">400-0579-222</span></div>
-        <div class="phone"><span class="area">兰溪市</span><span class="num">0579-88133182</span></div>
-        <div class="phone"><span class="area">东阳市</span><span class="num">0579-86639155</span></div>
-        <div class="phone"><span class="area">义乌市</span><span class="num">0579-85020060</span></div>
-        <div class="phone"><span class="area">永康市</span><span class="num">0579-87312393</span></div>
-        <div class="phone"><span class="area">浦江县</span><span class="num">0579-89392657</span></div>
-        <div class="phone"><span class="area">武义县</span><span class="num">0579-89081191</span></div>
-        <div class="phone"><span class="area">磐安县</span><span class="num">0579-84661958</span></div>
-        <div class="phone"><span class="area">通用医保</span><span class="num">12393</span></div>
-        <div class="phone"><span class="area">税务缴费</span><span class="num">12366</span></div>
-      </div>
-    </div>
-  </section>
+<h3>3.3 其他东阳采购</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>项目</th><th>发布时间</th><th>中标人</th><th class="num">中标金额</th><th>信源</th></tr></thead>
+<tbody>
+<tr><td>村社居家养老服务照料中心数据采集监测</td><td>2025-01-10</td><td>浙江佳诚工程咨询</td><td class="num">590,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>第三方入户调查及探访关爱</td><td>2024-12-20</td><td>[未公开]</td><td class="num">478,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>居家养老项目第三方经办</td><td>2024-01-10</td><td>[询价]</td><td class="num">290,000</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>2025/2026 年困难家庭"善居工程"项目</td><td>2025-05 / 2026-05</td><td>2026 年：浙江宏爱</td><td class="num">480,000/年</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>横店镇新建养老中心厨房设备</td><td>2025-01-07</td><td>金华市欧宝厨业</td><td class="num">653,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>横店镇新建养老中心电梯采购</td><td>2024-12-31</td><td>[未公开]</td><td class="num">[未公开]</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>民生服务综合体改造提升装饰工程</td><td>2025-10-13</td><td>浙江力的文化科技股份</td><td class="num">[未公开]</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>民生服务综合体建设指导和运维督导</td><td>2025-09-28</td><td>浙江省芯悦社会工作发展中心</td><td class="num">[未公开]</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2026 年吴宁/南市/白云街道居家养老服务中心运营</td><td>2026</td><td>[招标中]</td><td class="num">[未公开]</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2026 年"爱心卡"养老服务智能监管项目</td><td>2025-10 意向</td><td>[招标中]</td><td class="num">[未公开]</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2026 年老年人意外伤害保险采购</td><td>2026-06 意向</td><td>[招标中]</td><td class="num">[未公开]</td><td><span class="tag tag-C">C</span></td></tr>
+</tbody>
+</table>
+</div>
 
-  <!-- ========== 一句话总结 ========== -->
-  <section>
-    <h2>一句话总结</h2>
-    <div class="case" style="border-color: var(--primary); background: linear-gradient(135deg, #fff8f8 0%, #fff0f0 100%);">
-      <p style="font-size:17px;line-height:1.9;color:var(--ink-2)">
-        <strong style="color:var(--primary-dark);font-size:18px">长护险就是为"一人失能，全家失衡"的家庭兜底的社会保险。</strong><br><br>
-        在金华，<strong style="color:var(--primary-dark)">每年交 45-90 元</strong>，万一家里老人重度失能，国家帮你每月报销 <strong>1200-1680 元</strong>的护理费，相当于用几十倍的杠杆，给失能家庭买一份尊严和保障。<br><br>
-        记住三个关键词：<span class="tag tag-red">6 个月失能</span> <span class="tag tag-red">重度评估</span> <span class="tag tag-red">次月享受</span>。<br>
-        申请渠道：<span class="tag tag-blue">浙里办 APP</span> 或当地医保经办窗口。
-      </p>
-    </div>
-  </section>
+<h2>四、老年人口与养老需求</h2>
+<ul>
+  <li><strong>东阳市老年人口具体数据 <span class="tag tag-待补证">待补证</span></strong></li>
+  <li>估算口径（基于金华市 60+ 占 19.75%）：东阳户籍人口约 84 万，60+ 老年人口约 16-17 万</li>
+  <li>2023 年东阳认知障碍照护专区新增床位 160 张</li>
+  <li>浙江省 2024 年民生实事目标：金华市长护险参保任务 300 万人</li>
+</ul>
+
+<h2>五、待补证事项</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>编号</th><th>事项</th><th>建议补充来源</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>东阳市 60+ 老年人口、失能失智老人具体数</td><td>东阳市民政局、东阳市统计局</td></tr>
+<tr><td>2</td><td>东阳市 2024-2025 长护险实际参保人数</td><td>金华市医保局东阳分局</td></tr>
+<tr><td>3</td><td>横店镇新建养老中心详细规模、运营方</td><td>中国政府采购网、东阳市民政局</td></tr>
+<tr><td>4</td><td>2024 善居工程中标方详细名单</td><td>中国政府采购网</td></tr>
+<tr><td>5</td><td>长护险定点护理服务机构名单（东阳市）</td><td>金华市医保局</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- ============ 02-贵阳调研 ============ -->
+<section class="section" id="sec-guiyang">
+<h1>02 · 贵阳市调研报告</h1>
+<blockquote>贵州省省会，全省长护险 2028 年底基本实现全覆盖</blockquote>
+
+<h2>一、长期护理保险政策</h2>
+
+<h3>1.1 国家背景（核心 A 级信源）</h3>
+<ul>
+  <li><strong>中办国办 2025-03-25《关于加快建立长期护理保险制度的意见》</strong> —— 长护险从局部试点转向全国推行
+    <ul>
+      <li>主要目标：3 年左右时间统筹城乡的制度安排基本确立；<strong>到 2028 年底，长期护理保险制度将在全国范围基本实现全覆盖</strong></li>
+      <li>筹资：长期护理保险费率 <strong>统一控制在 0.3% 左右</strong></li>
+      <li>待遇：基金支付比例按未就业城乡居民 50% 左右 / 单位职工 70% 左右</li>
+      <li>原文：<a href="http://www.gsjw.gov.cn/content/2026-03/71139.html">甘肃纪检监察网（中办国办原文转载）</a> <span class="tag tag-A">A</span></li>
+    </ul>
+  </li>
+</ul>
+
+<h3>1.2 贵州省实施意见（核心 A 级信源）</h3>
+<ul>
+  <li><strong>省政府办公厅《关于加快建立长期护理保险制度的实施意见》</strong>
+    <ul>
+      <li><strong>2028 年 12 月底前，全省基本建立长期护理保险制度</strong>（覆盖全民、统筹城乡、互助共济、保障基本、公平适度、规范统一）</li>
+      <li>来源：<a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_1756a2cb58c21152">贵州省政府</a> <span class="tag tag-A">A</span></li>
+      <li>政策原文：<a href="https://m12333.cn/platform/raz.html">贵州省医保局政策法规库</a>（2026-06-09）<span class="tag tag-A">A</span></li>
+    </ul>
+  </li>
+</ul>
+
+<h3>1.3 贵州省实施意见关键政策要点</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>维度</th><th>内容</th></tr></thead>
+<tbody>
+<tr><td><strong>覆盖范围</strong></td><td>用人单位及其职工、退休人员、灵活就业人员和未就业城乡居民等均可参保；起步阶段优先覆盖单位职工、退休人员和灵活就业人员</td></tr>
+<tr><td><strong>统筹层级</strong></td><td><strong>市（州）级统筹</strong>，基金统收统支；条件成熟后推动省级统筹</td></tr>
+<tr><td><strong>筹资费率</strong></td><td>全省统一 <strong>0.3% 左右</strong></td></tr>
+<tr><td><strong>单位职工</strong></td><td>个人 0.15% + 单位 0.15%</td></tr>
+<tr><td><strong>退休人员</strong></td><td>0.15%，以本人基本养老金为基数</td></tr>
+<tr><td><strong>未就业居民</strong></td><td>0.3%（1:1 个人与政府补助）；新启动地区 0.15% 起步，5 年过渡到 0.3%</td></tr>
+<tr><td><strong>个账使用</strong></td><td>职工医保个人账户可用于本人及近亲属参加长护险的个人缴费</td></tr>
+<tr><td><strong>待遇支付</strong></td><td>不设起付线；职工/退休 70% 左右；未就业居民 50% 左右；基金年度最高支付限额 ≤ 上年度统筹地区城乡居民人均可支配收入的 50%</td></tr>
+<tr><td><strong>重点保障</strong></td><td>起步阶段重点保障 <strong>重度失能人员</strong></td></tr>
+<tr><td><strong>评估标准</strong></td><td>全国统一的失能等级评估标准，评估结果 <strong>全省互认</strong></td></tr>
+<tr><td><strong>经办平台</strong></td><td>依托全国统一医保信息平台，支持"一网通办"</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.4 贵州省试点进程</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>时间</th><th>城市</th><th>状态</th></tr></thead>
+<tbody>
+<tr><td>2020-09</td><td><strong>黔西南州</strong></td><td>列为全国第二批试点（第二个少数民族自治地区）</td></tr>
+<tr><td>2021</td><td>黔西南州</td><td>在全州城镇职工基本医疗保险参保人员范围内开展试点</td></tr>
+<tr><td>2022-10</td><td>黔西南州</td><td>兴义市、兴仁市城乡居民基本医疗保险参保人员纳入</td></tr>
+<tr><td>2024-01-24</td><td>黔西南州</td><td>1 家经办机构 + 1 家辅具机构 + 12 家上门护理 + 5 家养老服务</td></tr>
+<tr><td>2026</td><td><strong>遵义市、铜仁市</strong></td><td>已启动实施</td></tr>
+<tr><td><span class="tag tag-待补证">待补证</span></td><td><strong>贵阳市</strong></td><td>是否纳入下一批启动时点</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>1.5 黔西南州试点经验数据</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>字段</th><th>数据</th></tr></thead>
+<tbody>
+<tr><td>累计享受待遇人数</td><td>1856 人</td></tr>
+<tr><td>60+ 失能人数</td><td>1484 人（占 80%）</td></tr>
+<tr><td>居家护理人数</td><td>1262 人（占 68.82%）</td></tr>
+<tr><td>人均年支付</td><td>1.11 万元</td></tr>
+<tr><td>经办机构</td><td>平安养老保险股份有限公司贵州分公司</td></tr>
+</tbody>
+</table>
+</div>
+<p>来源：<a href="http://www.qxn.gov.cn/zwgk/zfjg/zybj_5135355/bmxxgkml_5135358/cqhl/202401/t20240129_83638706.html">黔西南州政府 2024-01-29</a> <span class="tag tag-A">A</span></p>
+
+<h2>二、养老政策</h2>
+
+<h3>2.1 贵州省经济困难失能老年人等群体集中照护</h3>
+<ul>
+  <li>2025-03 印发《关于做好经济困难失能老年人等群体集中照护服务工作的实施意见》</li>
+  <li>服务对象：低保失能老年人 + 高龄老年人（80+）</li>
+  <li>保障标准：不超当地特困人员基本生活费 + 全护理照料费总额</li>
+</ul>
+
+<h3>2.2 2026 年贵州省失能老年人"健康敲门行动"</h3>
+<ul>
+  <li>服务对象：<strong>12 万名 65+ 失能老年人</strong></li>
+  <li>服务内容：免费上门服务</li>
+</ul>
+
+<h3>2.3 贵阳市养老服务体系（核心数据）</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>维度</th><th>数据</th></tr></thead>
+<tbody>
+<tr><td><strong>60+ 老年人口</strong></td><td><strong>82.7 万人</strong></td></tr>
+<tr><td><strong>老龄化率</strong></td><td><strong>13.3%</strong>（2023-10 截至）</td></tr>
+<tr><td><strong>养老服务机构/设施</strong></td><td>960 个</td></tr>
+<tr><td><strong>床位</strong></td><td>2.4 万余张</td></tr>
+<tr><td><strong>备案机构护理型床位占比</strong></td><td>56%</td></tr>
+<tr><td><strong>街道养老服务中心</strong></td><td>25 个</td></tr>
+<tr><td><strong>社区养老服务站</strong></td><td>264 个</td></tr>
+<tr><td>工作思路</td><td>"12345"（1 个核心 + 2 个抓手 + 3 个支撑 + 4 个保障 + 5 个场景）</td></tr>
+<tr><td>服务网络</td><td>15 分钟养老服务圈</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>三、政府采购（2023 年以来）</h2>
+
+<h3>3.1 2024 年贵阳贵安特殊困难老年人家庭适老化改造（一）</h3>
+<ul>
+  <li>项目编号：GZQC-2024-ZFCG-028</li>
+  <li>采购人：贵阳市民政局</li>
+  <li>代理：贵州启城工程咨询有限公司</li>
+  <li>发布时间：2024-11-19 中标公告</li>
+  <li>总改造户数：<strong>2165 户</strong></li>
+</ul>
+<div class="table-wrap">
+<table>
+<thead><tr><th>标项</th><th>中标供应商</th><th class="num">金额（元）</th></tr></thead>
+<tbody>
+<tr><td>品目一</td><td>江苏瑞德信息产业有限公司</td><td class="num">10,085</td></tr>
+<tr><td>品目二</td><td>江苏瑞德信息产业有限公司</td><td class="num">10,085</td></tr>
+<tr><td>品目三</td><td><strong>北京米粒中康养老科技有限公司</strong></td><td class="num"><strong>2,375,000</strong></td></tr>
+</tbody>
+</table>
+</div>
+<p>来源：<a href="https://ggzy.guiyang.gov.cn/zfcg/zbcjjggg/fw_5372436/202411/t20241119_86104366.html">贵阳市公共资源交易中心 2024-11-19</a> <span class="tag tag-A">A</span></p>
+
+<h3>3.2 2024 贵阳贵安特殊困难老年人家庭适老化改造（二）</h3>
+<ul>
+  <li>项目编号：GZQC-2024-ZFCG-033</li>
+  <li>发布时间：2025-01-06 招标公告</li>
+  <li>采购预算：378 万元</li>
+  <li>改造户数：<strong>994 户</strong>（开阳县 484 户，含 207 户安装报警器设备；息烽县 510 户）</li>
+  <li>完成时间：2025-05-30 前</li>
+</ul>
+<p>来源：<a href="https://www.bidcenter.com.cn/news-334199061-1.html">采招网 2025-01-06</a> <span class="tag tag-C">C</span></p>
+
+<h3>3.3 其他贵阳市采购</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>项目</th><th>采购人</th><th>发布时间</th><th>中标人</th><th class="num">金额（元）</th><th>信源</th></tr></thead>
+<tbody>
+<tr><td>2024-2025 贵州省养老服务机构提质改造项目投资评审 A 包</td><td>贵州省民政厅</td><td>2024</td><td>贵州省某咨询公司</td><td class="num">821,400</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2024-2025 贵州省养老服务机构提质改造项目投资评审 B 包</td><td>同</td><td>2024</td><td>成都市某咨询公司</td><td class="num">810,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2023 年贵阳市养老服务工作政府购买服务（凯〔2023〕1345 号）</td><td>贵阳市民政局</td><td>2023</td><td><strong>贵州省养老服务行业协会</strong></td><td class="num">582,000</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>2024 花溪区康养商住综合体项目</td><td>贵阳花溪旅投置业</td><td>2024-04-12</td><td>[招标预]</td><td class="num">1,350,000,000（投资估算）</td><td><span class="tag tag-D">D</span></td></tr>
+<tr><td>西秀区特殊困难老年人家庭适老化改造</td><td>安顺市西秀区民政局</td><td>2024-09-12</td><td>贵州荣祥养老服务</td><td class="num">930,000</td><td><span class="tag tag-A">A</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>四、老年人口与养老需求</h2>
+<ul>
+  <li>贵阳市 60+ 82.7 万人（13.3%，2023-10 截至）</li>
+  <li>贵州省 12 万名 65+ 失能老年人享受"健康敲门行动"免费上门服务</li>
+  <li>黔西南州试点：累计 1856 人享受长护险待遇</li>
+  <li>黔西南州：1.11 万元/人/年（人均待遇支付）</li>
+  <li>商业长护险：鼓励商业保险公司开发与长护险相衔接的商业长期护理保险产品</li>
+</ul>
+
+<h2>五、待补证事项</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>编号</th><th>事项</th><th>建议补充来源</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>贵阳市本市长护险启动时点</strong></td><td>贵阳市医保局、贵阳日报</td></tr>
+<tr><td>2</td><td>贵阳市 60+ 失能老人具体数</td><td>贵阳市民政局、贵阳市卫健委</td></tr>
+<tr><td>3</td><td>贵阳市本级 2023-2025 养老服务政府采购总额</td><td>贵阳市公共资源交易中心</td></tr>
+<tr><td>4</td><td>贵阳市护理型床位/养老机构运营补贴政策</td><td>贵阳市民政局</td></tr>
+<tr><td>5</td><td>贵阳市"12345"工作思路详解</td><td>贵阳市政府工作报告</td></tr>
+<tr><td>6</td><td>黔西南州以外已启动地市（遵义/铜仁）的具体进展</td><td>遵义市医保局、铜仁市医保局</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- ============ 03-合肥调研 ============ -->
+<section class="section" id="sec-hefei">
+<h1>03 · 合肥调研报告</h1>
+<blockquote>安徽省省会，特困人员长护险先行；全市统一长护险办法 <span class="tag tag-待补证">待补证</span></blockquote>
+
+<h2>一、长期护理保险政策</h2>
+
+<h3>1.1 合肥市特困人员长期医疗护理保险（先行项目）</h3>
+<blockquote>合肥市目前<strong>唯一公开运行的长护险类产品</strong>，覆盖特困人员，2022 年起每年一标</blockquote>
+<div class="table-wrap">
+<table>
+<thead><tr><th>年份</th><th class="num">预算（万元）</th><th class="num">最高限价</th><th>中标人</th><th>合同期</th></tr></thead>
+<tbody>
+<tr><td>2022 年</td><td class="num">1190</td><td class="num">350 元/人</td><td>——</td><td>2022-07-01 至 2023-06-30</td></tr>
+<tr><td>2024 年</td><td class="num"><strong>1482</strong></td><td class="num">无</td><td><strong>中国人民财产保险（华东中心 D 座）</strong></td><td>2024-08-23 至 2025-08-22（1 年一签可续 2 次）</td></tr>
+</tbody>
+</table>
+</div>
+<ul>
+  <li>采购人：合肥市民政局</li>
+  <li>代理：安徽公共资源交易集团项目管理有限公司</li>
+  <li>政策依据：《安徽省政府购买服务管理细则》（皖政办〔2016〕65 号）</li>
+  <li>来源：<a href="http://ggzy.hefei.gov.cn/jyxx/002002/002002001/20220608/74f6f2d8-a19c-4fb5-8de8-641c1a5525e5.html">安徽合肥公共资源交易中心 2022-06-08 招标</a> <span class="tag tag-A">A</span> | <a href="https://www.bidcenter.com.cn/news-304257545-4.html">2024-08-20 合同</a> <span class="tag tag-C">C</span></li>
+</ul>
+
+<h3>1.2 2025-2027 职工大额医保+居民大病保险+长护保险承办服务</h3>
+<ul>
+  <li><strong>预算金额：3.5903 亿元</strong>（35,903 万元）</li>
+  <li>发布时间：2024-10-21 政府采购意向</li>
+  <li>服务期：2025-2027 年</li>
+  <li>经办方式：合署办公</li>
+</ul>
+<p>来源：<a href="https://www.bidcenter.com.cn/news-315971750-2.html">采招网 2024-10-21</a> <span class="tag tag-C">C</span></p>
+
+<h3>1.3 安徽全省长护险展望</h3>
+<ul>
+  <li>2025-2026 安徽部分地市拟启动长护险 <span class="tag tag-待补证">待补证</span></li>
+  <li>2025-11-20 全国长护险覆盖 1.8 亿人，累计惠及 260 万人</li>
+  <li>2026-01-01 全国中度以上失能老年人养老服务消费补贴（每月最高 800 元消费券）</li>
+</ul>
+
+<h2>二、养老政策</h2>
+
+<h3>2.1 合肥市基本养老服务体系（核心 A 级信源）</h3>
+<ul>
+  <li><strong>《合肥市推进基本养老服务体系建设实施方案》（合政办〔2023〕22 号）</strong> —— 2023-11-06 印发，2023-12-01 施行
+    <ul>
+      <li>原文：<a href="https://www.hefei.gov.cn/public/1741/109592385.html">合肥市政府 2023-11-23</a> <span class="tag tag-A">A</span></li>
+    </ul>
+  </li>
+  <li><strong>2023 版合肥市基本养老服务清单</strong> —— 14 类服务对象 + 28 项服务项目</li>
+  <li><strong>《合肥市健全基本养老服务体系促进养老服务高质量发展若干措施》</strong> —— 20 条措施
+    <ul>
+      <li>原文：<a href="http://www.hefei.gov.cn/zzfwzq/zcwj/202302/1cf7b776d33e4d62b12b53099f866554.shtml">合肥市政府 2025-12-20</a> <span class="tag tag-A">A</span></li>
+    </ul>
+  </li>
+</ul>
+
+<h3>2.2 高龄津贴（现行标准，2021-01-01 起动态调整）</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>年龄段</th><th class="num">每人每月</th><th>信源</th></tr></thead>
+<tbody>
+<tr><td>80-89 周岁</td><td class="num"><strong>120 元</strong></td><td>合肥市高龄津贴发放管理办法 <span class="tag tag-A">A</span></td></tr>
+<tr><td>90-99 周岁</td><td class="num"><strong>240 元</strong></td><td>同上</td></tr>
+<tr><td>100 周岁及以上</td><td class="num"><strong>600 元</strong></td><td>同上</td></tr>
+</tbody>
+</table>
+</div>
+<blockquote>资金分担：80-99 周岁，市区由市、区财政按 2:1 比例分担；县（市）由当地财政承担。100+ 由市财政全额承担</blockquote>
+
+<h3>2.3 居家养老服务支持</h3>
+<ul>
+  <li><strong>家庭养老床位建设</strong>：2023 年底不少于 4100 张</li>
+  <li><strong>特殊困难老年人家庭居家适老化改造</strong>：2025 年底不少于 10000 户</li>
+  <li><strong>老年助餐服务</strong>：2023 年底前累计建成老年食堂/老年助餐点 ≥ 1100 个</li>
+  <li><strong>合肥市</strong>全国省会城市<strong>首个将老年助餐服务纳入地方立法</strong></li>
+</ul>
+
+<h3>2.4 养老机构扶持</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>类型</th><th>标准</th></tr></thead>
+<tbody>
+<tr><td>一次性建设补贴</td><td>≥ 1000 元/张床位（2024 政策）</td></tr>
+<tr><td>运营补贴</td><td>失能失智：轻 300 元/床/月、中 400、重 600</td></tr>
+<tr><td>贷款贴息</td><td>同期三年期贷款基准利率的 30%</td></tr>
+<tr><td>护理型床位比例</td><td>2023 年底 ≥ 60%</td></tr>
+<tr><td>特困人员集中供养率</td><td>2023 年底生活不能自理特困人员 ≥ 60%</td></tr>
+</tbody>
+</table>
+</div>
+<p>来源：<a href="https://mzj.hefei.gov.cn/public/14161/109800341.html">2024 年合肥市养老服务扶持政策清单 2024-10-17</a> <span class="tag tag-A">A</span></p>
+
+<h3>2.5 安徽省 2026-01-01 起全国中度以上失能老年人养老服务消费补贴</h3>
+<ul>
+  <li>评估达中度/重度/完全失能等级老人可通过"民政通"申请</li>
+  <li>消费券形式，当月有效</li>
+  <li>入住养老机构 > 30 天：自付费用抵扣 <strong>40%</strong></li>
+  <li>社区养老/居家服务（助餐/助浴/助洁等）：抵扣 <strong>50%</strong></li>
+  <li><strong>每月抵扣额度最高 800 元</strong></li>
+</ul>
+
+<h3>2.6 合肥市民政局咨询电话</h3>
+<ul>
+  <li>局办公室：0551-62755522</li>
+  <li>养老服务处：0551-62755572</li>
+  <li>监督投诉：0551-12345</li>
+</ul>
+
+<h2>三、政府采购（2023 年以来）</h2>
+
+<h3>3.1 2023-2024 肥西县政府购买居家养老服务（1400 万元大单）</h3>
+<ul>
+  <li>项目编号：2023AEEFZ00099</li>
+  <li>采购人：肥西县民政局</li>
+  <li>预算金额：<strong>1400 万元</strong></li>
+  <li>最高限价：半失能 ≤ 400 元/人/月；全失能 ≤ 600 元/人/月</li>
+  <li>服务期限：731 日历天（2 年）</li>
+  <li>项目分包：4 个包</li>
+</ul>
+<div class="table-wrap">
+<table>
+<thead><tr><th>标段</th><th>服务片区</th><th>中标供应商</th><th class="num">合同金额（万元）</th></tr></thead>
+<tbody>
+<tr><td>第 1 包</td><td>上派镇、紫蓬镇、紫蓬山管委会</td><td>合肥市蜀山区大同社会工作服务中心</td><td class="num"><strong>500</strong></td></tr>
+<tr><td>第 2 包</td><td>三河镇、丰乐镇、桃花镇、严店镇、新港工业园、柏堰科技园、肥西经开区</td><td>合肥市蜀山区阳光公益服务中心</td><td class="num"><strong>300</strong></td></tr>
+<tr><td>第 3 包</td><td>花岗镇、山南镇、柿树岗乡</td><td><strong>江苏安康通健康管理服务有限公司</strong></td><td class="num"><strong>300</strong></td></tr>
+<tr><td>第 4 包</td><td>官亭镇、铭传乡、高店镇</td><td><strong>杭州市遐龄荟为老服务中心</strong></td><td class="num"><strong>300</strong></td></tr>
+</tbody>
+</table>
+</div>
+<p>代理：肥西县公共资源交易有限责任公司 | 来源：<a href="https://ggzy.hefei.gov.cn/jyxx/002002/002002001/20230427/d28a4640-8e9b-4579-85d4-fd2f5aff91a4.html">安徽合肥公共资源交易中心 2023-04-27</a> <span class="tag tag-A">A</span></p>
+
+<h3>3.2 其他合肥采购</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>项目</th><th>采购人</th><th>发布时间</th><th>中标人</th><th class="num">金额（元）</th><th>信源</th></tr></thead>
+<tbody>
+<tr><td>合肥市特困人员长期医疗护理保险（2024）</td><td>合肥市民政局</td><td>2024-08-20</td><td><strong>人保财险华东中心</strong></td><td class="num">14,820,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2025-2027 职工大额医保+居民大病保险+长护保险承办服务</td><td>[采购人待补证]</td><td>2024-10-21 意向</td><td>[招标中]</td><td class="num">359,030,000（预算）</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>合肥市特殊困难老人家庭智能门磁安全监测服务</td><td>合肥市民政局</td><td>2025-10-31</td><td>[招标中]</td><td class="num">2,400,000（3 年）</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>合肥市特殊困难老人居家用电监测服务</td><td>同</td><td>2025-11-19</td><td>[招标中]</td><td class="num">500,000（单一来源）</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2025-2026 合肥市社会办养老机构入住老人身体状况评估</td><td>同</td><td>2025-05-08</td><td>[招标中]</td><td class="num">379,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>合肥市养老机构消防社会化服务</td><td>同</td><td>2025-01-10</td><td>[招标中]</td><td class="num">1,416,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2026 年 6 月 合肥市特困人员长期医疗护理保险</td><td>同</td><td>2026-06-06</td><td>[招标中]</td><td class="num">[未公开]</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2026 年 3 月 合肥市社会服务人才培训</td><td>同</td><td>2026-03-31</td><td>[招标中]</td><td class="num">738,200</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2026 年 3 月 合肥市民政局救灾物资仓库物业管理</td><td>同</td><td>2026-03-02</td><td>[招标中]</td><td class="num">2,144,600</td><td><span class="tag tag-C">C</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>3.3 2023 年合肥市社会办养老机构补贴公示（67 家 / 1965.6 万元）</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>补贴类型</th><th class="num">机构数</th><th>张数/规模</th><th class="num">金额（元）</th></tr></thead>
+<tbody>
+<tr><td>一次性建设补贴</td><td class="num">3 家</td><td>216 张床位</td><td class="num">432,000</td></tr>
+<tr><td>日常运营补贴</td><td class="num">67 家</td><td>5308 张床位（4807 评估符合人次）</td><td class="num">19,141,696</td></tr>
+<tr><td>贷款贴息补助</td><td class="num">3 家</td><td>419+100+68 张</td><td class="num">82,700</td></tr>
+<tr style="font-weight:600;background:var(--gray-50)"><td><strong>合计</strong></td><td>——</td><td>——</td><td class="num"><strong>~19,656,396</strong></td></tr>
+</tbody>
+</table>
+</div>
+<p>来源：<a href="https://mzj.hefei.gov.cn/zxzx/tzgg/15200601.html">合肥市民政局 2024-09-09</a> <span class="tag tag-A">A</span></p>
+
+<h2>四、老年人口与养老需求</h2>
+
+<h3>4.1 合肥市老年人口数据（核心）</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>维度</th><th>数据</th><th>时点</th><th>来源</th></tr></thead>
+<tbody>
+<tr><td><strong>60+ 老年人口</strong></td><td><strong>159.38 万人</strong></td><td>2023 年底</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td><strong>60+ 占比</strong></td><td><strong>19.75%</strong></td><td>2023 年底</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td><strong>65+ 老年人口</strong></td><td><strong>121.98 万人</strong></td><td>2023 年底</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td><strong>65+ 占比</strong></td><td><strong>15.11%</strong></td><td>2023 年底</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td><strong>失能/部分失能老年人口</strong></td><td><strong>4.27 万人</strong></td><td>2023 年底</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>60+ 老年人口（2021 人口普查）</td><td>143 万人（15.3%）</td><td>2021-05-21</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>60+ 老年人口（2020 底）</td><td>135.3 万人（17.3%）</td><td>2020 底</td><td><span class="tag tag-A">A</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>4.2 100+ 百岁老人历史对照（合肥）</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>时点</th><th class="num">数量</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td>2018</td><td class="num">453 位</td><td>起点</td></tr>
+<tr><td>2021</td><td class="num">600+ 位</td><td>合肥编纂《合肥百岁老人档案》</td></tr>
+<tr><td>2022-09</td><td class="num">657 位</td><td>男 180（27.4%）/ 女 477（72.6%）</td></tr>
+<tr><td>2023-06</td><td class="num">613 位</td><td>男 157 / 女 456</td></tr>
+<tr><td>2023-10</td><td class="num"><strong>701 位</strong></td><td>突破 700</td></tr>
+<tr><td>2024-09</td><td class="num"><strong>803 位</strong></td><td>突破 800</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>4.3 100+ 百岁老人分县区分布（合肥，2024-09）</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>县区</th><th class="num">100+ 老人数</th><th>县区</th><th class="num">100+ 老人数</th></tr></thead>
+<tbody>
+<tr><td>肥东县</td><td class="num">202</td><td>庐江县</td><td class="num">55</td></tr>
+<tr><td>长丰县</td><td class="num">106</td><td>庐阳区</td><td class="num">53</td></tr>
+<tr><td>巢湖市</td><td class="num">100</td><td>瑶海区</td><td class="num">44</td></tr>
+<tr><td>蜀山区</td><td class="num">68</td><td>新站高新区</td><td class="num">19</td></tr>
+<tr><td>肥西县</td><td class="num">65</td><td>合肥经开区</td><td class="num">14</td></tr>
+<tr><td>包河区</td><td class="num">64</td><td>合肥高新区</td><td class="num">13</td></tr>
+<tr><td colspan="3" style="text-align:right"><strong>合计</strong></td><td class="num"><strong>803</strong></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>4.4 空巢老人（合肥）</h3>
+<ul>
+  <li>合肥空巢老人 <strong>80 万+</strong>，其中 12 万人完全独居</li>
+  <li>42% 因行动不便或无人陪同放弃复诊</li>
+  <li>78% 因不会手机支付抗拒线上买菜</li>
+  <li>35% 跌倒报警因未及时呼救导致并发症恶化</li>
+</ul>
+<p>来源：<a href="https://www.toutiao.com/article/7472638670105854498/">今日头条 2025-02-18</a> <span class="tag tag-D">D</span></p>
+
+<h3>4.5 2023 年合肥市民政事业资金</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>字段</th><th>数据</th></tr></thead>
+<tbody>
+<tr><td>2023 全市民政事业资金</td><td>35.68 亿元</td></tr>
+<tr><td>其中养老领域资金</td><td>6.99 亿元</td></tr>
+<tr><td>政府购买居家养老</td><td>377.53 万人次</td></tr>
+<tr><td>发放高龄津贴</td><td>3.81 亿元</td></tr>
+<tr><td>街道级居家社区养老服务综合体</td><td>12 个</td></tr>
+<tr><td>农村居家养老服务站</td><td>67 个</td></tr>
+</tbody>
+</table>
+</div>
+<p>来源：<a href="https://www.sohu.com/a/776705314_121106991">合肥人大 2024-05-06</a> <span class="tag tag-B">B</span></p>
+
+<h2>五、待补证事项</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>编号</th><th>事项</th><th>建议补充来源</th></tr></thead>
+<tbody>
+<tr><td>1</td><td><strong>合肥市全市统一长护险办法是否已出台/具体时点</strong></td><td>合肥市医保局、安徽省医保局</td></tr>
+<tr><td>2</td><td>2025-2027 长护险承办服务（3.59 亿）的实际中标方</td><td>合肥市医保局、安徽合肥公共资源交易中心</td></tr>
+<tr><td>3</td><td>合肥市 60+ 失能老人最新数（除 2023 年底的 4.27 万）</td><td>合肥市民政局、合肥市卫健委</td></tr>
+<tr><td>4</td><td>2025-2026 合肥市社会办养老机构补贴公示</td><td>合肥市民政局</td></tr>
+<tr><td>5</td><td>安徽全省长护险启动时点</td><td>安徽省医保局</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- ============ 04-3地对比 ============ -->
+<section class="section" id="sec-compare">
+<h1>04 · 三地对比分析</h1>
+<blockquote>横向对比：东阳 / 贵阳 / 合肥</blockquote>
+
+<h2>一、长护险制度对比</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>维度</th><th>东阳</th><th>贵阳</th><th>合肥</th></tr></thead>
+<tbody>
+<tr><td><strong>政策时点</strong></td><td>2025-01-01 随金华办法统一实施</td><td>黔西南州 2020-09 试点；2028 年底全省覆盖</td><td>特困人员长护险 2022 起先行；全市统一 <span class="tag tag-待补证">待补证</span></td></tr>
+<tr><td><strong>依据政策</strong></td><td>金政办发〔2024〕36 号</td><td>贵州省 2026-06-09 实施意见</td><td>皖政办〔2016〕65 号</td></tr>
+<tr><td><strong>统筹层级</strong></td><td>金华市市级统筹</td><td>市（州）级统筹 → 省级统筹</td><td>——</td></tr>
+<tr><td><strong>覆盖人群</strong></td><td>全市职工 + 市区/东阳/义乌/永康居民</td><td>优先职工+退休+灵活就业 → 居民</td><td>仅特困人员</td></tr>
+<tr><td><strong>筹资方式</strong></td><td>90 元定额（多主体共担）</td><td>0.3% 费率（多主体共担）</td><td>财政购买保险（特困人员）</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>二、养老政策对比</h2>
+
+<h3>2.1 高龄津贴（80+ 老人核心福利）</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>城市</th><th class="num">80-89 岁</th><th class="num">90-99 岁</th><th class="num">100+</th></tr></thead>
+<tbody>
+<tr><td><strong>东阳</strong></td><td class="num"><span class="tag tag-待补证">待补证</span></td><td class="num"><span class="tag tag-待补证">待补证</span></td><td class="num"><span class="tag tag-待补证">待补证</span></td></tr>
+<tr><td><strong>贵阳</strong></td><td class="num"><span class="tag tag-待补证">待补证</span></td><td class="num"><span class="tag tag-待补证">待补证</span></td><td class="num"><span class="tag tag-待补证">待补证</span></td></tr>
+<tr><td><strong>合肥</strong></td><td class="num"><strong>120 元/月</strong></td><td class="num"><strong>240 元/月</strong></td><td class="num"><strong>600 元/月</strong></td></tr>
+<tr><td>安徽省最低标准</td><td class="num">30 元/月</td><td class="num">100 元/月</td><td class="num">300 元/月</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.2 失能老人补贴</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>城市</th><th>失能/部分失能老人数</th><th>政策</th></tr></thead>
+<tbody>
+<tr><td><strong>东阳</strong></td><td><span class="tag tag-待补证">待补证</span></td><td>低保失能中度 250 元/月、重度 500 元/月；高龄爱心补贴 90+ 50 元/月</td></tr>
+<tr><td><strong>贵阳</strong></td><td>12 万名 65+ 失能老人</td><td>集中照护服务：低保失能+80+ 高龄</td></tr>
+<tr><td><strong>合肥</strong></td><td><strong>4.27 万人</strong>（2023 年底）</td><td>困难失能老年人纳入政府购买居家养老服务对象范围</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.3 适老化改造</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>城市</th><th>2023-2024 项目</th><th>规模</th></tr></thead>
+<tbody>
+<tr><td><strong>东阳</strong></td><td>善居工程 2025/2026 各 30 户，48 万元</td><td>户均上限 1.6 万</td></tr>
+<tr><td><strong>贵阳</strong></td><td>2024 一期 2165 户 + 二期 994 户</td><td>北京米粒中康+江苏瑞德</td></tr>
+<tr><td><strong>合肥</strong></td><td>2025 底前完成 1 万户</td><td>智能门磁 1.38 万户/3 年 240 万</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.4 助餐服务</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>城市</th><th>助餐点/食堂数</th><th>备注</th></tr></thead>
+<tbody>
+<tr><td><strong>东阳</strong></td><td>247 家居家养老照料中心含助餐</td><td>2023 运行补 294.8 万</td></tr>
+<tr><td><strong>贵阳</strong></td><td>25 个街道中心 + 264 个社区站</td><td>"15 分钟养老服务圈"</td></tr>
+<tr><td><strong>合肥</strong></td><td>2023 末累计 <strong>1100+</strong> 个</td><td>全国省会首个将助餐立法</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>三、政府采购规模对比</h2>
+
+<h3>3.1 2023-2025 年代表性中标项目</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>城市</th><th>项目</th><th>时间</th><th class="num">金额</th><th>中标人</th></tr></thead>
+<tbody>
+<tr><td rowspan="6"><strong>东阳</strong></td><td>居家养老服务 4 标段</td><td>2024-04</td><td class="num">报价 20-24.8 元/人</td><td>东阳亲乐园联合体/杭州九如城/宏爱助老/宁波茗山家护</td></tr>
+<tr><td>善居工程</td><td>2025/2026</td><td class="num">48 万 × 2 年</td><td>浙江宏爱（2026）</td></tr>
+<tr><td>村社居家养老服务照料中心数据采集监测</td><td>2024-12</td><td class="num"><strong>59 万</strong></td><td>浙江佳诚工程咨询</td></tr>
+<tr><td>第三方入户调查及探访关爱</td><td>2024-12</td><td class="num"><strong>47.8 万</strong></td><td>[未公开]</td></tr>
+<tr><td>居家养老项目第三方经办</td><td>2024-01</td><td class="num"><strong>29 万</strong></td><td>[询价]</td></tr>
+<tr><td>横店镇新建养老中心厨房设备</td><td>2025-01-07</td><td class="num"><strong>65.3 万</strong></td><td>金华欧宝厨业</td></tr>
+<tr><td rowspan="6"><strong>贵阳</strong></td><td>2024 特殊困难老年人家庭适老化改造（一）</td><td>2024-11</td><td class="num">3 个品目（共 2165 户）</td><td>北京米粒中康+江苏瑞德</td></tr>
+<tr><td>2024 特殊困难老年人家庭适老化改造（二）</td><td>2025-01</td><td class="num"><strong>378 万</strong>（994 户）</td><td>[招标中]</td></tr>
+<tr><td>2024-2025 贵州省养老服务机构提质改造投资评审</td><td>2024</td><td class="num">A 包 82.14 万+B 包 81 万</td><td>贵州省/成都市咨询公司</td></tr>
+<tr><td>2023 养老服务工作政府购买服务</td><td>2023</td><td class="num"><strong>58.2 万</strong></td><td>贵州省养老服务行业协会</td></tr>
+<tr><td>花溪区康养商住综合体</td><td>2024-04</td><td class="num"><strong>13.5 亿元</strong></td><td>贵阳花溪旅投置业（招标预）</td></tr>
+<tr><td>西秀区特殊困难老年人家庭适老化改造</td><td>2024-09</td><td class="num"><strong>93 万</strong></td><td>贵州荣祥养老服务</td></tr>
+<tr><td rowspan="7"><strong>合肥</strong></td><td>2023-2024 肥西县政府购买居家养老</td><td>2023-05</td><td class="num"><strong>1400 万</strong>（4 标段）</td><td>合肥本地 3 家+江苏安康通+杭州遐龄荟</td></tr>
+<tr><td>2024 合肥市特困人员长期医疗护理保险</td><td>2024-08</td><td class="num"><strong>1482 万</strong></td><td><strong>人保财险华东中心</strong></td></tr>
+<tr><td>2025-2027 职工大额医保+居民大病保险+长护保险</td><td>2024-12</td><td class="num"><strong>3.5903 亿元</strong></td><td>[招标中]</td></tr>
+<tr><td>特殊困难老人智能门磁监测</td><td>2025-10</td><td class="num"><strong>240 万/3 年</strong></td><td>[招标中]</td></tr>
+<tr><td>特殊困难老人居家用电监测</td><td>2025-11</td><td class="num"><strong>50 万</strong></td><td>[单一来源]</td></tr>
+<tr><td>2025-2026 社会办养老机构入住老人评估</td><td>2025-05</td><td class="num"><strong>37.9 万</strong></td><td>[招标中]</td></tr>
+<tr><td>养老机构消防社会化服务</td><td>2025-01</td><td class="num"><strong>141.6 万</strong></td><td>[招标中]</td></tr>
+<tr><td></td><td>2023 年社会办养老机构补贴</td><td>2023</td><td class="num"><strong>1965.6 万</strong></td><td>67 家机构</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>3.2 政府采购活跃度</h3>
+<ul>
+  <li><strong>合肥</strong>：长护险/养老政府采购体量最大，2023-2025 年合计 ><strong>4.1 亿元</strong>（含 2025-2027 长护险 3.59 亿）</li>
+  <li><strong>东阳</strong>：养老政府采购小额高频，年度福彩公益金近 1000 万</li>
+  <li><strong>贵阳</strong>：2023-2024 年适老化改造为主，2024-2025 年提质改造投资评审 + 适老化改造（一/二期）</li>
+</ul>
+
+<h3>3.3 中标供应商类型</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>城市</th><th>主要供应商类型</th></tr></thead>
+<tbody>
+<tr><td><strong>东阳</strong></td><td>本地企业（亲乐园联合体）+ 浙江省内企业（杭州九如城/宏爱助老/宁波茗山家护）+ 保险（人保财险金华分公司）</td></tr>
+<tr><td><strong>贵阳</strong></td><td>北京/江苏专业养老服务企业（米粒中康/江苏瑞德）+ 本地（贵州荣祥养老/贵州省养老服务行业协会）</td></tr>
+<tr><td><strong>合肥</strong></td><td>安徽省内 + 长三角头部（江苏安康通/杭州遐龄荟）+ 保险巨头（人保财险华东中心）</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>四、老年人口与需求对比</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>维度</th><th>东阳</th><th>贵阳</th><th>合肥</th></tr></thead>
+<tbody>
+<tr><td><strong>60+ 老年人口</strong></td><td><span class="tag tag-待补证">待补证</span></td><td><strong>82.7 万</strong></td><td><strong>159.38 万</strong></td></tr>
+<tr><td><strong>老龄化率</strong></td><td><span class="tag tag-待补证">待补证</span></td><td><strong>13.3%</strong></td><td><strong>19.75%</strong></td></tr>
+<tr><td><strong>失能/部分失能</strong></td><td><span class="tag tag-待补证">待补证</span></td><td>12 万名 65+ 失能老人</td><td><strong>4.27 万人</strong>（2023）</td></tr>
+<tr><td><strong>百岁老人</strong></td><td><span class="tag tag-待补证">待补证</span></td><td><span class="tag tag-待补证">待补证</span></td><td><strong>803 人</strong>（2024-09）</td></tr>
+<tr><td><strong>空巢老人</strong></td><td><span class="tag tag-待补证">待补证</span></td><td><span class="tag tag-待补证">待补证</span></td><td><strong>80 万+</strong>（12 万独居）</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>五、长护险参与方对比</h2>
+
+<h3>5.1 保险机构参与度</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>城市</th><th>主要保险参与方</th></tr></thead>
+<tbody>
+<tr><td><strong>东阳</strong></td><td><strong>人保财险金华市分公司</strong>（2025 中标老年人意外伤害险）</td></tr>
+<tr><td><strong>贵阳</strong></td><td><strong>平安养老保险股份有限公司贵州分公司</strong>（黔西南州试点经办）</td></tr>
+<tr><td><strong>合肥</strong></td><td><strong>人保财险华东中心</strong>（2024 特困人员长护险中标，1482 万）；2025-2027 长护险承办服务 <span class="tag tag-待补证">待补证</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>5.2 养老服务参与方</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>城市</th><th>主要服务方</th></tr></thead>
+<tbody>
+<tr><td><strong>东阳</strong></td><td>亲乐园/南市养老中心/亲和医院（联合体）+ 杭州九如城</td></tr>
+<tr><td><strong>贵阳</strong></td><td>北京米粒中康/江苏瑞德/贵州荣祥</td></tr>
+<tr><td><strong>合肥</strong></td><td>合肥本地机构（蜀山区大同社工、阳光公益）+ <strong>江苏安康通</strong>（南京）+ <strong>杭州遐龄荟</strong>（杭州）</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>六、对比表汇总（一图速览）</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>关键指标</th><th>东阳</th><th>贵阳</th><th>合肥</th></tr></thead>
+<tbody>
+<tr><td><strong>长护险启动</strong></td><td>2025-01-01</td><td>2020-09（局部）/ 2028 全省</td><td>2022（特困）</td></tr>
+<tr><td><strong>全市统一办法</strong></td><td>✅（随金华）</td><td>❌（试点先行）</td><td><span class="tag tag-待补证">待补证</span></td></tr>
+<tr><td><strong>筹资标准</strong></td><td>90 元/人/年</td><td>0.3% 费率</td><td>财政购买保险</td></tr>
+<tr><td><strong>支付比例</strong></td><td>80%/70%</td><td>70%/50%</td><td>350 元/人</td></tr>
+<tr><td><strong>60+ 老年人口</strong></td><td><span class="tag tag-待补证">待补证</span></td><td>82.7 万</td><td>159.38 万</td></tr>
+<tr><td><strong>失能老人数</strong></td><td><span class="tag tag-待补证">待补证</span></td><td>12 万</td><td>4.27 万</td></tr>
+<tr><td><strong>2023 养老政府投入</strong></td><td>~1000 万</td><td><span class="tag tag-待补证">待补证</span></td><td>6.99 亿</td></tr>
+<tr><td><strong>2024-2025 政府采购大单</strong></td><td>善居 48 万/30 户</td><td>适老化 378 万/994 户</td><td>长护险 3.59 亿</td></tr>
+<tr><td><strong>代表保险参与方</strong></td><td>人保财险金华分公司</td><td>平安养老贵州分公司</td><td>人保财险华东中心</td></tr>
+<tr><td><strong>代表服务商</strong></td><td>亲乐园联合体/杭州九如城</td><td>北京米粒中康/江苏瑞德</td><td>合肥本地+江苏安康通/杭州遐龄荟</td></tr>
+<tr><td><strong>信息化采购</strong></td><td>智能终端 100 万（2022）</td><td><span class="tag tag-待补证">待补证</span></td><td>智能门磁 240 万/3 年+用电监测 50 万</td></tr>
+<tr><td><strong>适老化改造采购</strong></td><td>善居工程 31.2 万（2023）</td><td>2024-25 一期+二期共 3159 户</td><td>2025 底 1 万户</td></tr>
+</tbody>
+</table>
+</div>
+
+<blockquote>本报告仅作为后续合作决策的事实基础，不构成选型建议或方案推荐。</blockquote>
+</section>
+
+<!-- ============ 06-数据汇编报告 ============ -->
+<section class="section" id="sec-data-report">
+<h1>06 · 数据汇编报告（纯数据）</h1>
+<blockquote>3 地（东阳/贵阳/合肥）· 性质：纯数据收集 / 数据表 + 原文链接 / 不含推荐与建议</blockquote>
+
+<h2>说明</h2>
+<p>本报告为<strong>纯数据汇编</strong>，按 4 个数据维度组织：</p>
+<ol>
+  <li>3 地长护险政策对比（数据表）</li>
+  <li>3 地老年人口与失能数据（数据表）</li>
+  <li>3 地 2023-2025 政府采购清单（数据表）</li>
+  <li>3 地政策文件与链接台账</li>
+</ol>
+<p><strong>报告不含</strong>：推荐、评级、入场建议、预算、团队、拍板事项、运营建议、排序/高亮、情绪或比喻。</p>
+<p><strong>报告仅含</strong>：数据、时点、原文链接、信源等级、待补证标注。</p>
+
+<h2 id="data-policy">数据表 1 · 3 地长护险政策对比</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>字段</th><th>东阳（随金华市）</th><th>贵阳（贵州省）</th><th>合肥</th></tr></thead>
+<tbody>
+<tr><td>适用政策</td><td>金政办发〔2024〕36 号</td><td>贵州省 2026-06-09 实施意见</td><td>皖政办〔2016〕65 号 / 特困人员长护险</td></tr>
+<tr><td>政策文号</td><td>金政办发〔2024〕36 号</td><td>黔府办发〔2026〕号 <span class="tag tag-待补证">待补证</span></td><td>皖政办〔2016〕65 号</td></tr>
+<tr><td>配套细则</td><td>金医保发〔2024〕63 号</td><td>《贵州省长期护理保险护理服务机构定点管理实施细则（试行）》（2025-06-23）</td><td>2024BFFFZ**** 招标文件</td></tr>
+<tr><td>政策发文时点</td><td>2024-09-28</td><td>2026-06-09 公布</td><td>2016 施行</td></tr>
+<tr><td>政策施行时点</td><td>2025-01-01</td><td>2028-12-31 全省覆盖</td><td>2022-07-01（特困项目起算）</td></tr>
+<tr><td>统筹层级</td><td>金华市市级统筹</td><td>市（州）级统筹 → 省级统筹</td><td>市级</td></tr>
+<tr><td>适用人群</td><td>全市职工 + 市区/东阳/义乌/永康居民</td><td>单位职工/退休/灵活就业 → 居民</td><td>特困人员 <span class="tag tag-待补证">待补证</span></td></tr>
+<tr><td>筹资标准</td><td>90 元/人/年</td><td>0.3%（职工 0.15+0.15）</td><td>财政购买保险</td></tr>
+<tr><td>职工个人缴费</td><td>45 元/年</td><td>0.15%</td><td>——</td></tr>
+<tr><td>职工单位缴费</td><td>45 元/年</td><td>0.15%</td><td>——</td></tr>
+<tr><td>居民个人缴费</td><td>30 元/年</td><td>0.15%（起步）</td><td>——</td></tr>
+<tr><td>居民财政补助</td><td>60 元/年</td><td>0.15%</td><td>——</td></tr>
+<tr><td>待遇支付方式</td><td>居家 / 机构</td><td>居家 / 社区 / 机构</td><td>补贴+服务</td></tr>
+<tr><td>居家支付</td><td>60 元/h，月 ≤ 25h，基金 80%</td><td>70% 支付（职工/退休）</td><td>350 元/人（最高限价）</td></tr>
+<tr><td>机构支付</td><td>≤80 元/床日，基金 70%</td><td>70% 支付（职工/退休）</td><td>——</td></tr>
+<tr><td>居民支付比例</td><td>同职工 70%</td><td>50% 支付</td><td>——</td></tr>
+<tr><td>偏远山区支付</td><td>25 元/日，基金 80%</td><td>——</td><td>——</td></tr>
+<tr><td>风险金提取</td><td>10% 保费，累计 ≥ 6 个月可支付</td><td>——</td><td>——</td></tr>
+<tr><td>评估级别</td><td>4 级（基本正常/轻/中/重）</td><td>全国统一标准</td><td>委托商业保险</td></tr>
+<tr><td>评估申请</td><td>浙里办 APP / 窗口 / 卫生院 / 定点机构</td><td>"一网通办"</td><td>——</td></tr>
+<tr><td>试点历史</td><td>2025-01-01 首次</td><td>黔西南州 2020-09 试点</td><td>2022 特困项目</td></tr>
+<tr><td>责任主体</td><td>金华市医保局</td><td>贵州省医保局</td><td>合肥市民政局</td></tr>
+<tr><td>政策咨询电话</td><td>0579-83472213</td><td>0851-85975027</td><td>0551-62755522</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="data-population">数据表 2 · 3 地老年人口与失能数据</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>字段</th><th>东阳</th><th>贵阳</th><th>合肥</th></tr></thead>
+<tbody>
+<tr><td>60+ 老年人口</td><td><span class="tag tag-待补证">待补证</span></td><td><strong>82.7 万人</strong></td><td><strong>159.38 万人</strong></td></tr>
+<tr><td>60+ 占比</td><td><span class="tag tag-待补证">待补证</span></td><td><strong>13.3%</strong></td><td><strong>19.75%</strong></td></tr>
+<tr><td>60+ 人口数据时点</td><td>——</td><td>2023-10</td><td>2023 年底</td></tr>
+<tr><td>65+ 老年人口</td><td><span class="tag tag-待补证">待补证</span></td><td><span class="tag tag-待补证">待补证</span></td><td><strong>121.98 万人</strong></td></tr>
+<tr><td>65+ 占比</td><td><span class="tag tag-待补证">待补证</span></td><td><span class="tag tag-待补证">待补证</span></td><td><strong>15.11%</strong></td></tr>
+<tr><td>80+ 高龄老人</td><td><span class="tag tag-待补证">待补证</span></td><td><span class="tag tag-待补证">待补证</span></td><td>23.52 万人（领津贴，2023-06）</td></tr>
+<tr><td>100+ 百岁老人</td><td><span class="tag tag-待补证">待补证</span></td><td><span class="tag tag-待补证">待补证</span></td><td><strong>803 人</strong>（2024-09）</td></tr>
+<tr><td>失能/部分失能老人</td><td><span class="tag tag-待补证">待补证</span></td><td><strong>12 万名 65+ 失能老人</strong></td><td><strong>4.27 万人</strong>（2023 年底）</td></tr>
+<tr><td>失能数据时点</td><td>——</td><td>2026（敲门行动目标）</td><td>2023 年底</td></tr>
+<tr><td>空巢老人</td><td><span class="tag tag-待补证">待补证</span></td><td><span class="tag tag-待补证">待补证</span></td><td><strong>80 万+</strong>（其中 12 万独居）</td></tr>
+<tr><td>老年人口增速</td><td>——</td><td>——</td><td>2020-2023：135.3 万→159.38 万</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.4 老年人口相关补贴标准（合肥）</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>补贴类型</th><th class="num">标准</th><th>资金分担</th></tr></thead>
+<tbody>
+<tr><td>80-89 周岁高龄津贴</td><td class="num">120 元/月</td><td>市区市/区 2:1；县（市）当地</td></tr>
+<tr><td>90-99 周岁高龄津贴</td><td class="num">240 元/月</td><td>同上</td></tr>
+<tr><td>100+ 周岁长寿津贴</td><td class="num">600 元/月</td><td>市财政全额</td></tr>
+<tr><td>2023 高龄津贴发放总额</td><td class="num">3.81 亿元</td><td>——</td></tr>
+<tr><td>2023 政府购买居家养老</td><td class="num">377.53 万人次</td><td>——</td></tr>
+<tr><td>2023 养老领域投入</td><td class="num">6.99 亿元</td><td>——</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.5 安徽省 2026 年高龄津贴"免申即享"标准</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>年龄段</th><th class="num">省级最低</th><th class="num">合肥实际</th></tr></thead>
+<tbody>
+<tr><td>80-89 周岁</td><td class="num">30 元/月</td><td class="num">120 元/月</td></tr>
+<tr><td>90-99 周岁</td><td class="num">100 元/月</td><td class="num">240 元/月（庐阳区 255 元）</td></tr>
+<tr><td>100+ 周岁</td><td class="num">300 元/月</td><td class="num">600 元/月（庐阳区 630 元）</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>2.6 全国中度以上失能老年人养老服务消费补贴（2026-01-01 起）</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>服务方式</th><th class="num">抵扣比例</th><th class="num">每月最高</th></tr></thead>
+<tbody>
+<tr><td>入住养老机构 > 30 天</td><td class="num">40%</td><td class="num">800 元</td></tr>
+<tr><td>社区养老服务/居家服务（助餐/助浴/助洁）</td><td class="num">50%</td><td class="num">800 元</td></tr>
+<tr><td>申请渠道</td><td colspan="2">"民政通" APP</td></tr>
+<tr><td>申请条件</td><td colspan="2">中度/重度/完全失能</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2 id="data-procurement">数据表 3 · 3 地 2023-2025 政府采购清单</h2>
+
+<h3>3.1 东阳市采购清单</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>项目名称</th><th>采购人</th><th>发布时间</th><th>中标人</th><th class="num">中标金额（元）</th><th>信源</th></tr></thead>
+<tbody>
+<tr><td>居家养老服务项目（4 标段）</td><td>东阳市民政局</td><td>2024-04-24</td><td>亲乐园联合体/杭州九如城/宏爱助老/宁波茗山家护</td><td class="num">报价 20-24.8/人</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>居家养老服务项目合同</td><td>同</td><td>2024-07-10</td><td>[未公开]</td><td class="num">800,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>居家养老项目第三方经办</td><td>同</td><td>2024-01-10</td><td>[询价]</td><td class="num">290,000</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>第三方入户调查及探访关爱</td><td>同</td><td>2024-12-20</td><td>[未公开]</td><td class="num">478,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>村社居家养老服务照料中心数据采集监测</td><td>同</td><td>2025-01-10</td><td>浙江佳诚工程咨询</td><td class="num">590,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2025 年困难家庭"善居工程"项目</td><td>同</td><td>2025-05</td><td>[未公开]</td><td class="num">480,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2026 年困难家庭"善居工程"项目</td><td>同</td><td>2026-05-27</td><td><strong>浙江宏爱</strong></td><td class="num">48 万（30 户）</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2024 年老年人意外伤害保险（公益金）</td><td>同</td><td>2024-12-31</td><td>[未公开]</td><td class="num">800,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2025 年养老服务体系建设[省级公益金老年人意外伤害险]</td><td>同</td><td>2025-09-18</td><td><strong>中国人民财产保险金华市分公司</strong></td><td class="num">0（财政公益金）</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>横店镇新建养老中心厨房设备</td><td>东阳市民政局</td><td>2025-01-07</td><td><strong>金华市欧宝厨业</strong></td><td class="num">653,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>横店镇新建养老中心电梯采购</td><td>同</td><td>2024-12-31</td><td>[未公开]</td><td class="num">[未公开]</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>居家养老服务中心智能服务终端建设</td><td>同</td><td>2022-03-28</td><td>[未公开]</td><td class="num">1,000,000（预算）</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>民生服务综合体改造提升装饰工程</td><td>同</td><td>2025-10-13</td><td>浙江力的文化科技股份</td><td class="num">[未公开]</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>民生服务综合体建设指导和运维督导服务</td><td>同</td><td>2025-10-13</td><td>浙江省芯悦社会工作发展中心</td><td class="num">[未公开]</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2026 年吴宁/南市/白云街道居家养老服务中心运营</td><td>同</td><td>2026</td><td>[招标中]</td><td class="num">[未公开]</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2026 年老年人意外伤害保险采购</td><td>同</td><td>2026-06</td><td>[招标中]</td><td class="num">[未公开]</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2025 年"爱心卡"养老服务智能监管项目</td><td>同</td><td>2025-10 意向</td><td>[招标中]</td><td class="num">[未公开]</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2026 年居家养老服务机构第三方服务（第二次）</td><td>同</td><td>2026-02-27</td><td><strong>浙江东勤公共服务</strong></td><td class="num">[未公开]</td><td><span class="tag tag-C">C</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>3.2 贵阳市采购清单</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>项目名称</th><th>采购人</th><th>发布时间</th><th>中标人</th><th class="num">中标金额（元）</th><th>信源</th></tr></thead>
+<tbody>
+<tr><td>2024 贵阳贵安特殊困难老年人家庭适老化改造（一）·品目一</td><td>贵阳市民政局</td><td>2024-11-19</td><td>江苏瑞德信息产业</td><td class="num">10,085</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>2024 贵阳贵安特殊困难老年人家庭适老化改造（一）·品目二</td><td>同</td><td>2024-11-19</td><td>江苏瑞德信息产业</td><td class="num">10,085</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>2024 贵阳贵安特殊困难老年人家庭适老化改造（一）·品目三</td><td>同</td><td>2024-11-19</td><td><strong>北京米粒中康养老科技</strong></td><td class="num">2,375,000</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>2024 贵阳贵安特殊困难老年人家庭适老化改造（二）·标项一</td><td>同</td><td>2025-01-06</td><td>[招标中]（994 户：开阳 484+息烽 510）</td><td class="num">3,780,000（预算）</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2024-2025 贵州省养老服务机构提质改造项目投资评审 A 包</td><td>贵州省民政厅</td><td>2024</td><td>贵州省某咨询公司</td><td class="num">821,400</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2024-2025 贵州省养老服务机构提质改造项目投资评审 B 包</td><td>同</td><td>2024</td><td>成都市某咨询公司</td><td class="num">810,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2023 年贵阳市养老服务工作政府购买服务（凯〔2023〕1345 号）</td><td>贵阳市民政局</td><td>2023</td><td><strong>贵州省养老服务行业协会</strong></td><td class="num">582,000</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>2024 花溪区康养商住综合体项目</td><td>贵阳花溪旅投置业</td><td>2024-04-12</td><td>[招标预]</td><td class="num">1,350,000,000（投资估算）</td><td><span class="tag tag-D">D</span></td></tr>
+<tr><td>西秀区特殊困难老年人家庭适老化改造</td><td>安顺市西秀区民政局</td><td>2024-09-12</td><td>贵州荣祥养老服务</td><td class="num">930,000</td><td><span class="tag tag-A">A</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>3.3 合肥市采购清单</h3>
+<div class="table-wrap">
+<table>
+<thead><tr><th>项目名称</th><th>采购人</th><th>发布时间</th><th>中标人</th><th class="num">中标金额（元）</th><th>信源</th></tr></thead>
+<tbody>
+<tr><td>2023-2024 肥西县政府购买居家养老服务（标 1）</td><td>肥西县民政局</td><td>2023-05-23</td><td>合肥市蜀山区大同社会工作服务中心</td><td class="num">5,000,000</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>2023-2024 肥西县政府购买居家养老服务（标 2）</td><td>同</td><td>2023-05-23</td><td>合肥市蜀山区阳光公益服务中心</td><td class="num">3,000,000</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>2023-2024 肥西县政府购买居家养老服务（标 3）</td><td>同</td><td>2023-05-23</td><td><strong>江苏安康通健康管理服务</strong></td><td class="num">3,000,000</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>2023-2024 肥西县政府购买居家养老服务（标 4）</td><td>同</td><td>2023-05-23</td><td><strong>杭州市遐龄荟为老服务中心</strong></td><td class="num">3,000,000</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>合肥市特困供养人员长期医疗护理保险（2022 年）</td><td>合肥市民政局</td><td>2022-06-08</td><td>[未公开]</td><td class="num">11,900,000（预算）</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>合肥市特困人员长期医疗护理保险（2024 年）</td><td>同</td><td>2024-08-20</td><td><strong>中国人民财产保险（华东中心 D 座）</strong></td><td class="num">14,820,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2025-2027 职工大额医保+居民大病保险+长护保险承办服务</td><td>[采购人待补证]</td><td>2024-10-21 意向</td><td>[招标中]</td><td class="num">359,030,000（预算）</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>合肥市特殊困难老人家庭智能门磁安全监测服务</td><td>合肥市民政局</td><td>2025-10-31</td><td>[招标中]</td><td class="num">2,400,000（3 年）</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>合肥市特殊困难老人居家用电监测服务</td><td>同</td><td>2025-11-19</td><td>[招标中]</td><td class="num">500,000（单一来源）</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2025-2026 合肥市社会办养老机构入住老人身体状况评估</td><td>同</td><td>2025-05-08</td><td>[招标中]</td><td class="num">379,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>合肥市养老机构消防社会化服务</td><td>同</td><td>2025-01-10</td><td>[招标中]</td><td class="num">1,416,000</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2026 年 6 月 合肥市特困人员长期医疗护理保险采购</td><td>同</td><td>2026-06-06</td><td>[招标中]</td><td class="num">[未公开]</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2026 年 1-2 月社区基本公共养老、青少年活动服务</td><td>同</td><td>2026-01-13</td><td>[招标中]</td><td class="num">[未公开]</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2026 年 3 月 合肥市社会服务人才培训</td><td>同</td><td>2026-03-31</td><td>[招标中]</td><td class="num">738,200</td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>2026 年 3 月 合肥市民政局救灾物资仓库物业管理</td><td>同</td><td>2026-03-02</td><td>[招标中]</td><td class="num">2,144,600</td><td><span class="tag tag-C">C</span></td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- ============ 05-信源附录 ============ -->
+<section class="section" id="sec-sources-appendix">
+<h1>05 · 信源附录</h1>
+<blockquote>完整链接清单（按主题分类）</blockquote>
+
+<h2 id="data-sources">A. 国家层面长护险政策</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>序号</th><th>文件</th><th>时间</th><th>链接</th><th>等级</th></tr></thead>
+<tbody>
+<tr><td>A1</td><td>中办国办《关于加快建立长期护理保险制度的意见》</td><td>2025-03-25</td><td><a href="http://www.gsjw.gov.cn/content/2026-03/71139.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>A2</td><td>新华社·覆盖全民!我国加快建立长期护理保险制度</td><td>2026-07-19</td><td><a href="https://www.sc.gov.cn/10462/13241/2026/3/26/479495ef60f94c2a96a5255af8b06471.shtml">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>A3</td><td>国家医保局《长期护理保险护理服务机构定点管理办法（试行）》（医保办发〔2024〕21 号）</td><td>2024-09-23</td><td><a href="https://m12333.cn/policy/pszyk.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>A4</td><td>国家医保局 2024-10-14 政策解读</td><td>2024-10-14</td><td><a href="https://www.sohu.com/a/819560913_121124568">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>A5</td><td>国家医保局、财政部《关于扩大长期护理保险制度试点的指导意见》（医保发〔2020〕37 号）</td><td>2020-09-10</td><td><a href="https://baike.baidu.com/item/国家医保局、财政部关于扩大长期护理保险制度试点的指导意见/53988631">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>A6</td><td>国家医保局《2023 年全国医疗保障事业发展统计公报》</td><td>2024-07-25</td><td>百度百科</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>A7</td><td>国家医保局《长期护理保险失能等级评估机构定点管理办法（试行）》</td><td>2024-05-06</td><td>百度百科</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>A8</td><td>国家医保局、民政部、财政部等八部门《加快建立长期护理保险制度实施方案》</td><td>2024-12</td><td><a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_37369c52d4446652">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>A9</td><td>中共中央、国务院《关于深化养老服务改革发展的意见》</td><td>2025-01-07</td><td><a href="https://www.sohu.com/a/846392035_115865">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>A10</td><td>长护险试点经验数据（1.8 亿人参保，260 万人享待遇，800 亿基金）</td><td>2024-11-20</td><td><a href="https://baike.baidu.com/item/长期护理险/1993186">百度百科</a></td><td><span class="tag tag-A">A</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>B. 浙江省/金华市/东阳市信源</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>序号</th><th>文件</th><th>时间</th><th>链接</th><th>等级</th></tr></thead>
+<tbody>
+<tr><td>B1.1</td><td>浙江省人民政府办公厅《关于印发浙江省多层次长期护理保障体系实施方案的通知》（浙政办发〔2023〕73 号）</td><td>2023-12</td><td>金政办发 36 号引用</td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>B1.2</td><td>金华市长护险实施办法（金政办发〔2024〕36 号）</td><td>2024-09-28</td><td><a href="https://www.jinhua.gov.cn/art/2024/9/30/art_1229562305_1810017.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>B1.3</td><td>《金华市长期护理保险实施办法》政策解读</td><td>2024-09-30</td><td><a href="http://www.jinhua.gov.cn/art/2024/9/30/art_1229759725_1810025.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>B1.4</td><td>金华市长护险实施细则（金医保发〔2024〕63 号）</td><td>2024-11-30</td><td><a href="http://ybj.jinhua.gov.cn/art/2025/4/29/art_1229794817_1818944.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>B1.5</td><td>《金华市长期护理保险实施细则》政策解读</td><td>2024-12-10</td><td><a href="https://m12333.cn/qa/pipmp.html">链接</a></td><td><span class="tag tag-B">B</span></td></tr>
+<tr><td>B1.6</td><td>2026 年金华市区医保、长护险、金惠保缴费通告</td><td>2025-09-28</td><td><a href="https://new.qq.com/rain/a/20250928A07PPR00">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>B2.1</td><td>2024-04-24 东阳市民政局居家养老服务中标（4 标段）</td><td>2024-04-24</td><td><a href="https://www.bidcenter.com.cn/newscontent-281798939-4.html">链接</a></td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>B2.3</td><td>2024-01-10 东阳市民政局居家养老项目第三方经办询价</td><td>2024-01-10</td><td><a href="http://ggzyjy.jinhua.gov.cn/art/2024/1/10/art_1229641940_330429.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>B3.1</td><td>2023 年东阳市民政局福利彩票公益金项目情况公告</td><td>2024-04-29</td><td><a href="https://www.163.com/dy/article/J0V3DGTL0552ADWT.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>C. 贵州省/贵阳市信源</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>序号</th><th>文件</th><th>时间</th><th>链接</th><th>等级</th></tr></thead>
+<tbody>
+<tr><td>C1.1</td><td>贵州省政府办公厅《关于加快建立长期护理保险制度的实施意见》</td><td>2026-06-09</td><td><a href="https://m12333.cn/platform/raz.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>C1.2</td><td>贵州长护险制度 2028 年底实现全覆盖</td><td>2025</td><td><a href="https://so.html5.qq.com/page/real/search_news?docid=70000021_1756a2cb58c21152">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>C1.4</td><td>黔西南州 2024 年长护险工作安排部署会</td><td>2024-01-29</td><td><a href="http://www.qxn.gov.cn/zwgk/zfjg/zybj_5135355/bmxxgkml_5135358/cqhl/202401/t20240129_83638706.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>C1.5</td><td>贵州省医保局政策法规库</td><td>长期</td><td><a href="https://m12333.cn/platform/raz.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>C1.6</td><td>《贵州省长期护理保险护理服务机构定点管理实施细则（试行）》</td><td>2025-06-23</td><td><a href="https://m12333.cn/platform/raz.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>C2.1</td><td>2024 贵阳贵安特殊困难老年人家庭适老化改造（一）中标</td><td>2024-11-19</td><td><a href="https://ggzy.guiyang.gov.cn/zfcg/zbcjjggg/fw_5372436/202411/t20241119_86104366.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>C2.5</td><td>2024-09-12 安顺市西秀区特殊困难老年人家庭适老化改造</td><td>2024-09-12</td><td><a href="https://ggzy.guizhou.gov.cn/tradeInfo/detailHtml?metaId=994133901812518912">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>D. 安徽省/合肥市信源</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>序号</th><th>文件</th><th>时间</th><th>链接</th><th>等级</th></tr></thead>
+<tbody>
+<tr><td>D1.1</td><td>《合肥市推进基本养老服务体系建设实施方案》（合政办〔2023〕22 号）</td><td>2023-11-06</td><td><a href="https://www.hefei.gov.cn/public/1741/109592385.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>D1.2</td><td>《合肥市健全基本养老服务体系促进养老服务高质量发展若干措施》</td><td>2025-12-20</td><td><a href="http://www.hefei.gov.cn/zzfwzq/zcwj/202302/1cf7b776d33e4d62b12b53099f866554.shtml">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>D1.3</td><td>2024 年合肥市养老服务扶持政策清单</td><td>2024-10-17</td><td><a href="https://mzj.hefei.gov.cn/public/14161/109800341.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>D1.4</td><td>合肥市高龄津贴发放管理办法</td><td>2017-04-01</td><td><a href="https://www.chaohu.gov.cn/public/16171/110407210.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>D1.5</td><td>合肥市"十四五"养老服务业发展规划</td><td>2022-04-25</td><td><a href="http://ah.anhuinews.com/gdxw/202204/t20220425_5972330.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>D2.1</td><td>合肥市特困供养人员长期医疗护理保险公开招标</td><td>2022-06-08</td><td><a href="http://ggzy.hefei.gov.cn/jyxx/002002/002002001/20220608/74f6f2d8-a19c-4fb5-8de8-641c1a5525e5.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>D2.5</td><td>2023-2024 肥西县政府购买居家养老服务</td><td>2023-04-27</td><td><a href="https://ggzy.hefei.gov.cn/jyxx/002002/002002001/20230427/d28a4640-8e9b-4579-85d4-fd2f5aff91a4.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>D2.10</td><td>2023 年合肥市社会办养老机构补贴公示</td><td>2024-09-09</td><td><a href="https://mzj.hefei.gov.cn/zxzx/tzgg/15200601.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>D3.1</td><td>合肥百岁寿星 803 人</td><td>2024-10-11</td><td><a href="http://ah.people.com.cn/n2/2024/1011/c358339-41004069.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>D3.2</td><td>合肥市政协委员崔峥·为老年人提供更全面优质养老服务</td><td>2025-01-17</td><td><a href="https://news.cri.cn/n/20250117/3a775cf4-7e5a-d5be-473e-6f799338dd06.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>E. 三地政府采购平台入口</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>城市</th><th>平台</th><th>链接</th></tr></thead>
+<tbody>
+<tr><td>东阳/金华</td><td>金华市公共资源交易中心</td><td><a href="http://ggzyjy.jinhua.gov.cn">http://ggzyjy.jinhua.gov.cn</a></td></tr>
+<tr><td>东阳/金华</td><td>政采云平台</td><td><a href="https://www.zcygov.cn">https://www.zcygov.cn</a></td></tr>
+<tr><td>东阳/金华</td><td>浙江省政府采购网</td><td><a href="https://www.zjzfcg.gov.cn">https://www.zjzfcg.gov.cn</a></td></tr>
+<tr><td>贵阳</td><td>全国公共资源交易平台（贵州省·贵阳市）</td><td><a href="https://ggzy.guiyang.gov.cn">https://ggzy.guiyang.gov.cn</a></td></tr>
+<tr><td>贵阳</td><td>贵州省公共资源交易中心</td><td><a href="https://ggzy.guizhou.gov.cn">https://ggzy.guizhou.gov.cn</a></td></tr>
+<tr><td>贵阳</td><td>贵州省政府采购网</td><td><a href="http://www.ccgp-guizhou.gov.cn">http://www.ccgp-guizhou.gov.cn</a></td></tr>
+<tr><td>合肥</td><td>全国公共资源交易平台（安徽省·合肥市）</td><td><a href="https://ggzy.hefei.gov.cn">https://ggzy.hefei.gov.cn</a></td></tr>
+<tr><td>合肥</td><td>安徽合肥公共资源交易电子服务系统</td><td><a href="https://www.hfggzy.com">https://www.hfggzy.com</a></td></tr>
+<tr><td>合肥</td><td>安徽省政府采购网</td><td><a href="http://www.ccgp-anhui.gov.cn">http://www.ccgp-anhui.gov.cn</a></td></tr>
+<tr><td>全国</td><td>中国政府采购网</td><td><a href="https://www.ccgp.gov.cn">https://www.ccgp.gov.cn</a></td></tr>
+<tr><td>全国</td><td>中国公共资源交易平台</td><td><a href="https://www.ggzy.gov.cn">https://www.ggzy.gov.cn</a></td></tr>
+<tr><td>第三方</td><td>采招网</td><td><a href="https://www.bidcenter.com.cn">https://www.bidcenter.com.cn</a></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>F. 第三方报道与行业分析</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>序号</th><th>内容</th><th>时间</th><th>链接</th><th>等级</th></tr></thead>
+<tbody>
+<tr><td>F1</td><td>2024 地方两会·"养老保险""长护险"等保险关键词</td><td>2024-02-07</td><td><a href="https://finance.sina.com.cn/jjxw/2024-02-07/doc-inahfexe8050582.shtml">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>F2</td><td>2023-2024 年养老服务行业招投标数据分析</td><td>2024-08-07</td><td><a href="https://www.sohu.com/a/799069918_100297723">链接</a></td><td><span class="tag tag-D">D</span></td></tr>
+<tr><td>F3</td><td>长期护理险（百度百科）</td><td>长期</td><td><a href="https://baike.baidu.com/item/长期护理险/1993186">链接</a></td><td><span class="tag tag-C">C</span></td></tr>
+<tr><td>F4</td><td>长护险护理服务机构定点管理办法政策解读</td><td>2024-10-23</td><td><a href="https://www.sohu.com/a/819560913_121124568">链接</a></td><td><span class="tag tag-B">B</span></td></tr>
+<tr><td>F7</td><td>7 月 1 日起，济南市异地长期居住人员长护险待遇</td><td>2024-06-28</td><td><a href="https://www.sohu.com/a/789187871_120852719">链接</a></td><td><span class="tag tag-B">B</span></td></tr>
+<tr><td>F8</td><td>长护险政策指南（贵州省医保局）</td><td>2026-07-02</td><td><a href="https://m12333.cn/platform/raz.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+<tr><td>F9</td><td>长护险·长护险护理服务机构定点管理办法（重庆市政策解读）</td><td>2025-01-22</td><td><a href="http://ylbzj.cq.gov.cn/zwgk_535/zcjd/wzjd/202501/t20250122_14194009.html">链接</a></td><td><span class="tag tag-A">A</span></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>G. 信源等级说明</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>等级</th><th>来源</th><th>可信度</th></tr></thead>
+<tbody>
+<tr><td><span class="tag tag-A">A</span></td><td>政府官网/医保局/民政局原文、人民日报、新华社、中央政府门户</td><td>最高</td></tr>
+<tr><td><span class="tag tag-B">B</span></td><td>地方党报、行业权威媒体</td><td>高</td></tr>
+<tr><td><span class="tag tag-C">C</span></td><td>中国政府采购网、公共资源交易平台、采招网、第三方公告平台</td><td>中</td></tr>
+<tr><td><span class="tag tag-D">D</span></td><td>搜狐、网易、今日头条、第三方报道</td><td>辅助参考</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<!-- ============ 00-信源追踪表 ============ -->
+<section class="section" id="sec-sources-tracker">
+<h1>00 · 信源追踪表</h1>
+<blockquote>全部信源台账（A/B/C/D 级 + 主题 + 链接 + 使用频次 + 验证状态）</blockquote>
+
+<h2>一、信源统计</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>等级</th><th class="num">数量</th><th class="num">占比</th></tr></thead>
+<tbody>
+<tr><td><span class="tag tag-A">A</span></td><td class="num">32</td><td class="num">45%</td></tr>
+<tr><td><span class="tag tag-B">B</span></td><td class="num">8</td><td class="num">11%</td></tr>
+<tr><td><span class="tag tag-C">C</span></td><td class="num">28</td><td class="num">39%</td></tr>
+<tr><td><span class="tag tag-D">D</span></td><td class="num">4</td><td class="num">5%</td></tr>
+<tr style="font-weight:600;background:var(--gray-50)"><td><strong>合计</strong></td><td class="num">72</td><td class="num">100%</td></tr>
+</tbody>
+</table>
+</div>
+<blockquote>信源分布反映：<strong>A 级信源为主（45%）</strong>，<strong>C 级信源为辅（39%，主要为政府采购公告）</strong>，整体可信度较高。</blockquote>
+
+<h2>二、关键数据交叉验证</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>关键数据</th><th>信源 A</th><th>信源 B</th><th>信源 C</th><th>验证状态</th></tr></thead>
+<tbody>
+<tr><td><strong>金华市长护险筹资 90 元/人/年</strong></td><td>金政办发 36 号</td><td>金医保发 63 号</td><td>本地宝解读</td><td>✅ 三源一致</td></tr>
+<tr><td><strong>金华市 2024 年长护险参保任务 300 万人</strong></td><td>金政办发 36 号解读</td><td>——</td><td>——</td><td>✅ 单源（A 级）</td></tr>
+<tr><td><strong>金华市 2026 年长护险个人缴费 30 元</strong></td><td>2025-09-28 缴费通告</td><td>实施细则</td><td>——</td><td>✅ 两源一致</td></tr>
+<tr><td><strong>金华市 2025-01-01 实施</strong></td><td>金政办发 36 号</td><td>本地宝</td><td>——</td><td>✅ 两源一致</td></tr>
+<tr><td><strong>贵州省 2028 年底基本实现全省覆盖</strong></td><td>贵州省政府报道</td><td>贵阳网</td><td>贵州省医保局</td><td>✅ 三源一致</td></tr>
+<tr><td><strong>贵州省 0.3% 缴费费率</strong></td><td>贵州省政府</td><td>贵阳网</td><td>实施意见</td><td>✅ 三源一致</td></tr>
+<tr><td><strong>贵阳市 60+ 老年人口 82.7 万</strong></td><td>[单源]</td><td>——</td><td>——</td><td>⚠️ 单源待补证</td></tr>
+<tr><td><strong>合肥市 60+ 159.38 万人（19.75%）</strong></td><td>国际在线政协委员崔峥</td><td>合肥市民政局</td><td>合肥人大</td><td>✅ 三源一致</td></tr>
+<tr><td><strong>合肥市 4.27 万失能/部分失能老人</strong></td><td>国际在线</td><td>——</td><td>——</td><td>⚠️ 单源待补证</td></tr>
+<tr><td><strong>合肥市 80+ 高龄津贴 120 元/月</strong></td><td>巢湖市银屏镇</td><td>合肥市民政局</td><td>庐阳区海棠街道</td><td>✅ 三源一致</td></tr>
+<tr><td><strong>2024-08-20 合肥特困长护险 1482 万</strong></td><td>采招网合同</td><td>必联网</td><td>——</td><td>✅ 两源一致</td></tr>
+<tr><td><strong>2025-2027 合肥长护险 3.5903 亿元</strong></td><td>采招网 2024-10-21</td><td>——</td><td>——</td><td>⚠️ 单源待补证</td></tr>
+<tr><td><strong>肥西县 2023-2024 居家养老 1400 万 4 标段</strong></td><td>合肥公共资源交易中心</td><td>采招网</td><td>——</td><td>✅ 两源一致</td></tr>
+<tr><td><strong>东阳市 2023 福彩公益金 9 项目 1049.5 万</strong></td><td>网易转载东阳市政府</td><td>——</td><td>——</td><td>⚠️ 单源待补证</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>三、待补证事项汇总（按紧迫度排序）</h2>
+<div class="table-wrap">
+<table>
+<thead><tr><th>编号</th><th>城市</th><th>事项</th><th>当前信源</th><th>建议补充</th></tr></thead>
+<tbody>
+<tr><td>1</td><td>合肥</td><td>全市统一长护险办法是否已出台/具体时点</td><td>无</td><td>合肥市医保局、安徽省医保局</td></tr>
+<tr><td>2</td><td>贵阳</td><td>贵阳市本市长护险启动时点</td><td>无</td><td>贵阳市医保局、贵阳日报</td></tr>
+<tr><td>3</td><td>东阳</td><td>东阳市 60+ 老年人口具体数</td><td>无</td><td>东阳市民政局、东阳市统计局</td></tr>
+<tr><td>4</td><td>合肥</td><td>2025-2027 长护险 3.59 亿经办服务中标方</td><td>招标中</td><td>安徽合肥公共资源交易中心</td></tr>
+<tr><td>5</td><td>合肥</td><td>2025-2026 合肥市社会办养老机构补贴公示</td><td>2023 公示</td><td>合肥市民政局</td></tr>
+<tr><td>6</td><td>安徽</td><td>安徽全省长护险启动时点</td><td>无</td><td>安徽省医保局</td></tr>
+<tr><td>7</td><td>贵阳市</td><td>12 万 65+ 失能老人（2026 敲门行动）地市分配</td><td>全省数据</td><td>贵阳市民政局</td></tr>
+<tr><td>8</td><td>三地</td><td>居家养老上门服务实际收费水平</td><td>无</td><td>当地行业协会或承接商</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>四、信源使用规则</h2>
+<ol>
+  <li><strong>关键政策结论</strong>必须引用 A 级信源</li>
+  <li><strong>政府采购金额/中标方</strong>优先 A 级（公共资源交易中心），C 级（采招网）作交叉验证</li>
+  <li><strong>数据时点</strong>必须在引用时明确标注</li>
+  <li><strong>争议结论</strong>列出多源对比</li>
+  <li><strong>D 级信源</strong>仅作背景补充，不作为关键数据来源</li>
+  <li><strong>链接失效</strong>时通过标题+发文字号检索</li>
+  <li><strong>"待补证"</strong>事项需在下一轮调研中优先处理</li>
+</ol>
+</section>
+
+</main>
 
 </div>
 
-<footer>
-  <p>本文为科普性质内容，所有政策标准以 <strong>金华市医疗保障局</strong> 官方发布为准。</p>
-  <p>政策依据：《金华市人民政府办公室关于印发金华市长期护理保险实施办法的通知》（金政办发〔2024〕36号）<br>
-  《金华市长期护理保险实施细则》（金医保发〔2024〕63号）</p>
-  <p style="margin-top:14px;opacity:.7">最后更新：2026 年 6 月 · 数据来源：金华医保局、澎湃新闻、金华本地宝、国家医保局</p>
+<footer class="footer">
+  <p>项目执行：<strong>市场调研部</strong> | 项目代号：长护险养老调研-2026-07-23</p>
+  <p>数据时点：2026-07-23 | 报告版本：V1.0 | 下次更新建议：2026-10</p>
+  <p>本报告为<strong>纯调研报告</strong>，不含商业建议/选型推荐。所有政策数据均可通过文末信源链接跳转至原始来源核验。</p>
 </footer>
-
-<script>
-  // FAQ toggle
-  document.querySelectorAll('.faq-q').forEach(q => {
-    q.addEventListener('click', () => {
-      q.parentElement.classList.toggle('open');
-    });
-  });
-</script>
 
 </body>
 </html>
